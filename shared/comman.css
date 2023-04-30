@@ -9,6 +9,8 @@
 }
 
 body {
+    font-family: monospace;
+    color: var(--white);
     background: var(--background);
 }
 
@@ -22,7 +24,6 @@ a {
 }
 
 .base-font {
-    font-family: monospace;
     font-size: 14px;
 }
 
