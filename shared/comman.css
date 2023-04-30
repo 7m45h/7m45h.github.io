@@ -6,6 +6,17 @@
     --yellow:     #ebde6b;
     --blue:       #528bff;
     --white:      #abb2bf;
+}
 
-    background-color: var(--background);
+body {
+    background: var(--background);
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.base-font {
+    font-family: monospace;
+    font-size: 16px;
 }

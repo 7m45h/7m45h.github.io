@@ -1,6 +1,4 @@
-body {
-    margin: 0;
-}
+@import url("/shared/comman.css");
 
 #nav-main {
     display: flex;
@@ -8,11 +6,11 @@ body {
     align-items: center;
     margin: 0 auto;
     width: 90%;
-    height: 10vh;
+    height: 8vh;
 }
 
 #a-home {
-    height: 90%;
+    height: 50%;
 }
 
 #img-home {
