@@ -19,6 +19,7 @@ body {
 a {
     text-decoration: none;
     color: var(--white);
+    user-select: none;
 }
 
 .no-margin {
