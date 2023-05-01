@@ -6,6 +6,8 @@
     --yellow:     #ebde6b;
     --blue:       #528bff;
     --white:      #abb2bf;
+    
+    --border-size: 2px;
 }
 
 body {
