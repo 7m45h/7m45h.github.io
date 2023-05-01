@@ -18,7 +18,7 @@
     margin: 5vh 2%;
     border: var(--border-size) solid var(--white);
     width: 24%;
-    height: 40vh;
+    height: 34vh;
     background: var(--black);
     transition-duration: 0.1s;
     transition-timing-function: ease-in-out;
