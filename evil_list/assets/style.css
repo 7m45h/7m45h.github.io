@@ -1,2 +1,8 @@
 @import url("/shared/comman.css");
 @import url("/shared/header.css");
+
+#main-div {
+    margin: 4vh auto;
+    width: 80%;
+    background: var(--black);
+}
