@@ -17,8 +17,8 @@
     box-sizing: border-box;
     margin: 2vh 2vh; 
     border: var(--border-size) solid var(--white);
-    height: 10vh;
-    aspect-ratio: 10/1;
+    height: 6vh;
+    aspect-ratio: 8/1;
     font-weight: bolder;
 }
 
@@ -44,6 +44,17 @@
     align-items: center;
     box-sizing: border-box;
     border: var(--border-size) solid var(--white);
-    height: 90%;
+    height: 74%;
     aspect-ratio: 1/1;
+}
+
+.div-movie-imdb:hover, .div-movie-magnet:hover {
+    background: var(--green);
+    color: var(--black);
+    border-color: var(--green);
+    cursor: pointer;
+}
+
+.div-movie-imdb:active, .div-movie-magnet:active {
+    border-color: var(--background);
 }
