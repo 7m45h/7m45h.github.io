@@ -20,6 +20,7 @@
 #footer-main {
     display: flex;
     justify-content: center;
+    margin: 2vh 0;
 }
 
 @media (pointer: fine) {
