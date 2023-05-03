@@ -1,2 +1,50 @@
 @import url("/shared/comman.css");
 @import url("/shared/header.css");
+
+#main-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1vh auto;
+    width: 90%;
+    background: var(--black);
+}
+
+.div-movie-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 2vh 2vh; 
+    border: var(--border-size) solid var(--white);
+    height: 10vh;
+    aspect-ratio: 10/1;
+    font-weight: bolder;
+}
+
+.div-movie-name {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 70%;
+    height: 90%;
+}
+
+.div-movie-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: 90%;
+}
+
+.div-movie-imdb, .div-movie-magnet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: var(--border-size) solid var(--white);
+    height: 90%;
+    aspect-ratio: 1/1;
+}
