@@ -28,6 +28,7 @@
     align-items: center;
     width: 70%;
     height: 90%;
+    overflow: hidden;
 }
 
 .div-movie-buttons {
