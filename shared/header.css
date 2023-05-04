@@ -18,9 +18,9 @@
 }
 
 #footer-main {
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin: 2vh 0;
 }
 
 @media (pointer: fine) {
