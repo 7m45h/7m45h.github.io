@@ -27,35 +27,27 @@
     justify-content: start;
     align-items: center;
     width: 70%;
-    height: 90%;
+    height: 80%;
     overflow: hidden;
 }
 
-.div-movie-buttons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 20%;
-    height: 90%;
-}
-
-.div-movie-imdb, .div-movie-magnet {
+.div-movie-imdb {
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
     border: var(--border-size) solid var(--white);
-    height: 74%;
+    height: 80%;
     aspect-ratio: 1/1;
 }
 
-.div-movie-imdb:hover, .div-movie-magnet:hover {
+.div-movie-imdb:hover {
     background: var(--green);
     color: var(--black);
     border-color: var(--green);
     cursor: pointer;
 }
 
-.div-movie-imdb:active, .div-movie-magnet:active {
+.div-movie-imdb:active {
     border-color: var(--background);
 }
