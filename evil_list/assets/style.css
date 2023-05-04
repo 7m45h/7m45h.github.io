@@ -12,10 +12,9 @@
 
 .div-movie-main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    margin: 2vh 2vh; 
     border: var(--border-size) solid var(--white);
     height: 6vh;
     aspect-ratio: 8/1;
@@ -26,7 +25,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 70%;
+    margin-left: 4%;
     height: 80%;
     overflow: hidden;
 }
@@ -37,6 +36,7 @@
     align-items: center;
     box-sizing: border-box;
     border: var(--border-size) solid var(--white);
+    margin-right: 1%;
     height: 80%;
     aspect-ratio: 1/1;
 }
