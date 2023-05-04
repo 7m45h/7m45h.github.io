@@ -17,6 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     font-family: monospace;
     color: var(--white);
     background: var(--background);

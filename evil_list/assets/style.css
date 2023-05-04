@@ -6,7 +6,6 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin: 1vh auto;
     width: 90%;
 }
 
@@ -16,6 +15,7 @@
     align-items: center;
     box-sizing: border-box;
     border: var(--border-size) solid var(--white);
+    margin: 1%;
     height: 6vh;
     aspect-ratio: 8/1;
     font-weight: bolder;
