@@ -27,6 +27,7 @@
     align-items: center;
     margin-left: 4%;
     height: 80%;
+    white-space: nowrap;
     overflow: hidden;
 }
 
