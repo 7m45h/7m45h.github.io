@@ -9,5 +9,21 @@
 }
 
 .div-link-main {
-    margin: 1%;
+    display: flex;
+    box-sizing: border-box;
+    border: var(--border-size) solid var(--white);
+    min-width: 24%;
+    margin: 2%;
+}
+
+.div-link-fav {
+    display: flex;
+    align-items: center;
+    margin: 5%;
+}
+
+.div-link-name {
+    display: flex;
+    align-items: center;
+    margin: auto;
 }
