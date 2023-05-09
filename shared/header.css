@@ -17,12 +17,6 @@
     height: 100%;
 }
 
-#footer-main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 @media (pointer: fine) {
     #a-home:hover {
         border: var(--border-size) solid var(--green);
