@@ -1,5 +1,13 @@
 @import url("/shared/comman.css");
 @import url("/shared/header.css");
 
+#div-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .div-link-main {
+    margin: 1%;
 }
