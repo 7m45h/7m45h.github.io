@@ -13,12 +13,15 @@
     box-sizing: border-box;
     border: var(--border-size) solid var(--white);
     min-width: 24%;
+    max-width: 100%;
     margin: 2%;
 }
 
 .div-link-fav {
     display: flex;
     align-items: center;
+    width: 24px;
+    aspect-ratio: 1/1;
     margin: 5%;
 }
 
