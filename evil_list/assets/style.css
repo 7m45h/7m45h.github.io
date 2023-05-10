@@ -3,52 +3,14 @@
 
 #main-div {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     width: 90%;
 }
 
-.div-movie-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    border: var(--border-size) solid var(--white);
+.a-movie {
+    padding: 1%;
     margin: 1%;
-    height: 6vh;
-    aspect-ratio: 8/1;
-    font-weight: bolder;
-}
-
-.div-movie-name {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-left: 4%;
-    height: 80%;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-.div-movie-imdb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
     border: var(--border-size) solid var(--white);
-    margin: 1%;
-    height: 80%;
-    aspect-ratio: 1/1;
-}
-
-.div-movie-imdb:hover {
-    background: var(--green);
-    color: var(--black);
-    border-color: var(--green);
-    cursor: pointer;
-}
-
-.div-movie-imdb:active {
-    border-color: var(--background);
 }
