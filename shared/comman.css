@@ -1,3 +1,6 @@
+@import url("/shared/header.css");
+@import url("/shared/footer.css");
+
 :root {
     --background: #000000;
     --black:      #09090b;

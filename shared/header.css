@@ -1,9 +1,12 @@
 #nav-main {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
     width: 90%;
+    background: var(--background);
 }
 
 #a-home {

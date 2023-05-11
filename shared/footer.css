@@ -1,0 +1,12 @@
+#footer-main {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+}
+
+#div-scroll {
+    height: 100%;
+    width: 0;
+    background: var(--green);
+}
