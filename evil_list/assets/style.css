@@ -1,5 +1,6 @@
 @import url("/shared/comman.css");
 @import url("/shared/header.css");
+@import url("/shared/footer.css");
 
 #main-div {
     display: flex;
