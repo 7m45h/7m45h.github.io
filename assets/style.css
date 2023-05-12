@@ -17,7 +17,7 @@
     box-sizing: border-box;
     margin: 4%;
     border: var(--border-size) solid var(--white);
-    height: 20vh;
+    height: 40vh;
     aspect-ratio: 16/9;
     background: var(--black);
     transition-duration: 0.1s;
