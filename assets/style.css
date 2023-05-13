@@ -17,4 +17,11 @@
     margin: 4% 3%;
     padding: 6% 8%;
     background: var(--black);
+    transition-property: scale;
+    transition-timing-function: ease-in-out;
+    transition-duration: 150ms;
+}
+
+.card:hover {
+    scale: 104%;
 }
