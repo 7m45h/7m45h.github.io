@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     border: var(--border-size) solid var(--white);
-    margin: 4% 10%;
-    padding: 8% 10%;
+    margin: 4% 3%;
+    padding: 6% 8%;
     background: var(--black);
 }
