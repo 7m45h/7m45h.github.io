@@ -1,5 +1,22 @@
 #header {
-    height: calc( var(--font-size-header) * 2 );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc( var(--font-size-normal) * 2 );
     width: 90%;
-    margin: auto;
+}
+
+#a-home > img {
+    box-sizing: border-box;
+    height: var(--header-logo-size);
+    width: var(--header-logo-size);
+}
+
+#a-repo > h1{
+    margin: 0;
+    font-size: var(--font-size-normal);
+}
+
+#a-home > img:hover {
+    border: var(--border-size) solid var(--green);
 }

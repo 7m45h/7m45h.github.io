@@ -9,12 +9,34 @@
 
     --border-size: 2px;
     --font-size-normal: 14px;
-    --font-size-header: 20px;
+    --header-logo-size: 20px;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     height: 100vh;
     margin: 0;
     font-family: monospace;
     background: var(--background);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+#div-main {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin: 1% 0;
+    border: var(--border-size) solid var(--white);
+    overflow: auto;
+}
+
+a:hover {
+    color: var(--green);
 }

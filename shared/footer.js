@@ -1,9 +1,8 @@
-const scrollBar = document.getElementById("div-scroll");
-const mainDiv = document.getElementById("main-div");
+const footer = document.getElementById("footer");
+const mainDiv = document.getElementById("div-main");
 
 function updateScrollBar() {
-    let scroll = (mainDiv.scrollTop / (mainDiv.scrollHeight - mainDiv.clientHeight)) * 100;
-    scrollBar.style.width = scroll + "%";
+    footer.style.width = (mainDiv.scrollTop / (mainDiv.scrollHeight - mainDiv.clientHeight)) * 100 + "%";
 }
 
 updateScrollBar();
