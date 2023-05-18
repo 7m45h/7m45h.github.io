@@ -18,10 +18,6 @@ body {
 }
 
 #div-cams {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
     flex: 4;
 }
 
@@ -34,7 +30,7 @@ body {
 .cam {
     box-sizing: border-box;
     border: var(--border-size) solid var(--white);
-    width: 256px;
-    height: 144px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
