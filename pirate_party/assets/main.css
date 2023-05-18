@@ -1,6 +1,5 @@
 @import url("/shared/comman.css");
 @import url("/shared/header.css");
-@import url("/shared/footer.css");
 
 body {
     height: 100vh;
@@ -35,4 +34,7 @@ body {
 .cam {
     box-sizing: border-box;
     border: var(--border-size) solid var(--white);
+    width: 256px;
+    height: 144px;
+    object-fit: cover;
 }
