@@ -20,6 +20,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: monospace;
+    font-weight: bold;
     background: var(--background);
 }
 
@@ -33,7 +34,6 @@ a {
     height: 100%;
     width: 100%;
     margin: 1% 0;
-    border: var(--border-size) solid var(--white);
     overflow: auto;
 }
 

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: calc( var(--font-size-normal) * 2 );
+    height: calc( var(--header-logo-size) * 2 );
     width: 90%;
 }
 
