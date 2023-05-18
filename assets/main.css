@@ -1,0 +1,27 @@
+@import url("/shared/comman.css");
+@import url("/shared/header.css");
+@import url("/shared/footer.css");
+
+#main-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--border-size) solid var(--white);
+    margin: 4% 3%;
+    padding: 6% 8%;
+    background: var(--black);
+    transition-property: scale;
+    transition-timing-function: ease-in-out;
+    transition-duration: 150ms;
+}
+
+.card:hover {
+    scale: 104%;
+}

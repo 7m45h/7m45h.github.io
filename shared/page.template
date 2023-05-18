@@ -8,7 +8,7 @@
         <meta name="author" content="tmash">
         <title></title>
         <link rel="icon" type="image/gif" sizes="420x420" href="/shared/logo.png">
-        <link rel="stylesheet" type="text/css" href="./assets/style.css">
+        <link rel="stylesheet" type="text/css" href="./assets/main.css">
         <script src="/shared/footer.js" defer></script>
     </head>
     <body class="no-margin">
