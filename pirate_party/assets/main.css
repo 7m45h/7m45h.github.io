@@ -14,6 +14,8 @@
 #div-cams {
     flex: 3;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     overflow: auto;
 }
@@ -26,7 +28,10 @@
 
 #div-cams > video {
     flex: 1;
+    max-width: 320px;
+    max-height: 240px;
     margin: 1%;
     border: var(--border-size) solid var(--white);
     border-radius: var(--font-size-normal);
+    object-fit: cover;
 }
