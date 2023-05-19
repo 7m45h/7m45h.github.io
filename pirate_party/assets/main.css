@@ -18,6 +18,9 @@
 #div-cams {
     grid-column: 2/3;
     grid-row: 1/2;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     overflow: scroll;
 }
 
@@ -33,4 +36,13 @@
     grid-row: 2/3;
     box-sizing: border-box;
     border-top: var(--border-normal) var(--white);
+}
+
+#div-cams > video {
+    flex: 1;
+    box-sizing: border-box;
+    min-width: 320px;
+    margin: 1%;
+    border: var(--border-normal) var(--white);
+    border-radius: var(--font-size-normal);
 }
