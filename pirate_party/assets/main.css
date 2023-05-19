@@ -52,10 +52,29 @@
 
 #div-conn > button {
     margin: 2% 20%;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: var(--font-size-normal);
+    color: var(--black);
+    background: var(--green);
+    cursor: pointer;
 }
+
+#div-conn > button:disabled {
+    color: var(--black);
+    background: var(--white);
+    cursor: not-allowed;
+}
+
+#div-conn > button:active:not(:disabled) {
+    scale: 94%;
+}
+
 
 #div-conn > textarea {
     margin: 2%;
+    border: none;
     resize: none;
     color: var(--white);
     font-weight: bold;
