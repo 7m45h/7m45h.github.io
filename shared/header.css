@@ -1,1 +1,12 @@
+#header {
+    grid-row: 1/2;
+}
 
+#a-home > img {
+    width: 100%;
+    height: 100%;
+}
+
+#a-repo > h1 {
+    margin: 0;
+}
