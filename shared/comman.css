@@ -14,7 +14,7 @@
 
 body {
     display: grid;
-    grid-template-rows: calc( var(--header-logo-size) * 2 ) auto var(--font-size-normal);
+    grid-template-rows: calc( var(--header-logo-size) * 2 ) auto 4px;
     height: 100vh;
     margin: 0;
     font-family: monospace;
