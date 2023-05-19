@@ -35,6 +35,9 @@
     grid-column: 2/3;
     grid-row: 2/3;
     box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
     border-top: var(--border-normal) var(--white);
 }
 
@@ -45,4 +48,17 @@
     margin: 1%;
     border: var(--border-normal) var(--white);
     border-radius: var(--font-size-normal);
+}
+
+#div-conn > button {
+    margin: 2% 20%;
+}
+
+#div-conn > textarea {
+    margin: 2%;
+    resize: none;
+    color: var(--white);
+    font-weight: bold;
+    font-size: var(--font-size-normal);
+    background: var(--black);
 }
