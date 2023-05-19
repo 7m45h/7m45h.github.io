@@ -31,8 +31,8 @@ a {
 
 #div-main {
     box-sizing: border-box;
-    height: 100%;
     width: 100%;
+    height: calc( 100vh - var(--header-logo-size) * 2 - var(--font-size-normal) - 2%);
     margin: 1% 0;
 }
 

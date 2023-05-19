@@ -1,2 +1,32 @@
 @import url("/shared/comman.css");
 @import url("/shared/header.css");
+
+#div-main {
+    display: flex;
+}
+
+#div-chat {
+    flex: 1;
+    border: var(--border-size) solid var(--white);
+    border-radius: var(--font-size-normal);
+}
+
+#div-cams {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+#div-file {
+    flex: 1;
+    border: var(--border-size) solid var(--white);
+    border-radius: var(--font-size-normal);
+}
+
+#div-cams > video {
+    flex: 1;
+    margin: 1%;
+    border: var(--border-size) solid var(--white);
+    border-radius: var(--font-size-normal);
+}
