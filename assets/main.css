@@ -1,3 +1,32 @@
 @import url("/shared/comman.css");
 @import url("/shared/header.css");
 @import url("/shared/footer.css");
+
+#main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+#main > a {
+    box-sizing: border-box;
+    font-size: var(--font-size-normal);
+    width: 24%;
+    height: 24%;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--border-normal) var(--white);
+    border-radius: var(--font-size-normal);
+    background: var(--black);
+    transition-property: scale;
+    transition-timing-function: ease-in-out;
+    transition-duration: 100ms;
+}
+
+#main > a:hover {
+    scale: 104%;
+}
