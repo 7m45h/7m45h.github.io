@@ -1,5 +1,16 @@
 #header {
     grid-row: 1/2;
+    justify-self: center;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#a-home {
+    box-sizing: border-box;
+    width: var(--header-logo-size);
+    height: var(--header-logo-size);
 }
 
 #a-home > img {
@@ -9,4 +20,9 @@
 
 #a-repo > h1 {
     margin: 0;
+    font-size: var(--font-size-normal);
+}
+
+#a-home:hover {
+    border: var(--border-normal) var(--green);
 }

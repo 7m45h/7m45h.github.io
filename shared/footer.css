@@ -1,3 +1,6 @@
 #footer {
     grid-row: 3/4;
+    justify-self: center;
+    width: 0;
+    background: var(--green);
 }

@@ -7,13 +7,14 @@
     --blue:       #528bff;
     --white:      #abb2bf;
 
+    --border-normal: 2px solid;
     --font-size-normal: 14px;
-    --font-size-header: 20px;
+    --header-logo-size: 20px;
 }
 
 body {
     display: grid;
-    grid-template-rows: calc( var(--font-size-header) * 2 ) auto var(--font-size-normal);
+    grid-template-rows: calc( var(--header-logo-size) * 2 ) auto var(--font-size-normal);
     height: 100vh;
     margin: 0;
     font-family: monospace;
