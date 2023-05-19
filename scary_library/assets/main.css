@@ -1,3 +1,16 @@
 @import url("/shared/comman.css");
 @import url("/shared/header.css");
 @import url("/shared/footer.css");
+
+#main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+#main > a {
+    font-size: var(--font-size-normal);
+    margin: 2%;
+}
