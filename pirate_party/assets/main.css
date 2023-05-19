@@ -45,9 +45,11 @@
     flex: 1;
     box-sizing: border-box;
     min-width: 320px;
+    max-width: 640px;
     margin: 1%;
     border: var(--border-normal) var(--white);
     border-radius: var(--font-size-normal);
+    object-fit: cover;
 }
 
 #div-conn > button {

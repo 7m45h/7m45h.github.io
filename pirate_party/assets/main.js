@@ -2,6 +2,7 @@ const buttonOffer = document.getElementById("conn-offer");
 const buttonAnswer = document.getElementById("conn-answer");
 const offerText = document.getElementById("text-offer");
 const answerText = document.getElementById("text-answer");
+const divCams = document.getElementById("div-cams");
 
 let connection = new RTCPeerConnection();
 let incomingStream = new MediaStream();
@@ -18,10 +19,12 @@ async function init() {
     });
 
     connection.addEventListener("track", (evn) => {
-        evn.streams.forEach((stream) => {
+        evn.streams.forEach((stream, streamNo) => {
+            let camId = `cam-${streamNo}`;
+            divCams.innerHTML += `<video id="${camId}" autoplay></video>`;
             stream.getTracks().forEach((track) => {
                 incomingStream.addTrack(track);
-                document.getElementById("temp-1").srcObject = incomingStream;
+                document.getElementById(camId).srcObject = incomingStream;
             });
         });
     });
@@ -54,9 +57,11 @@ async function createAnswer() {
 
 async function addAnswer() {
     answer = JSON.parse(answerText.value);
-    if (!connection.currentRemoteDescription) {
-        connection.setRemoteDescription(answer);
-    }
+//    if (!connection.currentRemoteDescription) {
+//        connection.setRemoteDescription(answer);
+//    }
+
+    connection.setRemoteDescription(answer);
 }
 
 init();
