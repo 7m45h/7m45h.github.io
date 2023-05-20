@@ -6,6 +6,12 @@ const divCams = document.getElementById("div-cams");
 const chatInput = document.getElementById("input-message");
 const messageBox = document.getElementById("messages");
 
+const stunList = {
+    iceServers: [ {
+        urls: [ "stun:stun1.1.google.com:19302", "stun:stun2.1.google.com:19302", "stun3.l.google.com:19302", "stun4.l.google.com:19302" ]
+    } ]
+};
+
 let connection = new RTCPeerConnection({'iceServers': [{'urls': 'stun:stun.l.google.com:19302'}]});
 let incomingStream = new MediaStream();
 let outgoingStream;
