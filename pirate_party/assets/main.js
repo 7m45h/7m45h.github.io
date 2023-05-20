@@ -12,6 +12,14 @@ let offer;
 let answer;
 
 async function createOffer() {
+    dataChannel = {
+        chat: connection.createDataChannel("chat")
+    };
+
+    dataChannel.chat.addEventListener("message", (evn) => {
+        console.log(evn.data);
+    });
+
     connection.addEventListener("icecandidate", (evn) => {
         if (evn.candidate) {
             offerText.value = btoa(JSON.stringify(connection.localDescription));
@@ -24,6 +32,15 @@ async function createOffer() {
 
 async function createAnswer() {
     offer = JSON.parse(atob(offerText.value));
+
+    connection.addEventListener("datachannel", (evn) => {
+        dataChannel = {
+            chat: evn.channel
+        };
+        dataChannel.chat.addEventListener("message", (evn) => {
+            console.log(evn.data);
+        });
+    });
 
     connection.addEventListener("icecandidate", (evn) => {
         if (evn.candidate) {
@@ -64,10 +81,10 @@ function buttonHandler(buttonValue) {
         buttonAnswer.innerText = "add answer";
     } else if (buttonValue == "createAnswer") {
         createAnswer();
-        buttonAnswer.disabled = true;
-        buttonOffer.disabled = false;
         offerText.value = "";
         answerText.value = "";
+        buttonAnswer.disabled = true;
+        buttonOffer.disabled = false;
     } else if (buttonValue == "addAnswer") {
         addAnswer();
         answerText.value = "";
