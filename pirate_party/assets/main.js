@@ -120,14 +120,8 @@ async function init() {
     });
 
     connection.addEventListener("track", (evn) => {
-        evn.streams.forEach((stream, streamNo) => {
-            let camId = `cam-${streamNo}`;
-            divCams.innerHTML += `<video id="${camId}" autoplay></video>`;
-            stream.getTracks().forEach((track) => {
-                incomingStream.addTrack(track);
-                document.getElementById(camId).srcObject = incomingStream;
-            });
-        });
+        divCams.innerHTML += `<video id="cam-1" autoplay></video>`;
+        document.getElementById("cam-1").srcObject = evn.streams[0];
     });
 }
 
