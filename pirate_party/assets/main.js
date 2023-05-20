@@ -6,13 +6,19 @@ const divCams = document.getElementById("div-cams");
 const chatInput = document.getElementById("input-message");
 const messageBox = document.getElementById("messages");
 
-const stunList = {
+const stunListOne = {
     iceServers: [ {
-        urls: [ "stun:stun1.1.google.com:19302", "stun:stun2.1.google.com:19302", "stun3.l.google.com:19302", "stun4.l.google.com:19302" ]
+        urls: [ "stun:stun3.l.google.com:19302", "stun:stun4.l.google.com:19302" ]
     } ]
 };
 
-let connection = new RTCPeerConnection({'iceServers': [{'urls': 'stun:stun.l.google.com:19302'}]});
+const stunListTwo = {
+    iceServers: [ {
+        urls: [ "stun:stun1.1.google.com:19302", "stun:stun2.1.google.com:19302" ]
+    } ]
+};
+
+let connection = new RTCPeerConnection(stunListOne);
 let incomingStream = new MediaStream();
 let outgoingStream;
 let dataChannel;
@@ -30,7 +36,7 @@ async function createOffer() {
 
     connection.addEventListener("icecandidate", (evn) => {
         if (evn.candidate) {
-            offerText.value = btoa(JSON.stringify(connection.localDescription));
+            offerText.value = JSON.stringify(connection.localDescription);
         }
     });
 
@@ -39,7 +45,7 @@ async function createOffer() {
 }
 
 async function createAnswer() {
-    offer = JSON.parse(atob(offerText.value));
+    offer = JSON.parse(offerText.value);
 
     connection.addEventListener("datachannel", (evn) => {
         dataChannel = {
@@ -52,7 +58,7 @@ async function createAnswer() {
 
     connection.addEventListener("icecandidate", (evn) => {
         if (evn.candidate) {
-            answerText.value = btoa(JSON.stringify(connection.localDescription));
+            answerText.value = JSON.stringify(connection.localDescription);
         }
     });
 
@@ -62,7 +68,7 @@ async function createAnswer() {
 }
 
 async function addAnswer() {
-    answer = JSON.parse(atob(answerText.value));
+    answer = JSON.parse(answerText.value);
     if (!connection.currentRemoteDescription) {
         connection.setRemoteDescription(answer);
     }
