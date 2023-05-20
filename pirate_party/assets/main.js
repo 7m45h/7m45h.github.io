@@ -3,6 +3,8 @@ const buttonAnswer = document.getElementById("conn-answer");
 const offerText = document.getElementById("text-offer");
 const answerText = document.getElementById("text-answer");
 const divCams = document.getElementById("div-cams");
+const chatInput = document.getElementById("input-message");
+const messageBox = document.getElementById("messages");
 
 let connection = new RTCPeerConnection();
 let incomingStream = new MediaStream();
@@ -17,7 +19,7 @@ async function createOffer() {
     };
 
     dataChannel.chat.addEventListener("message", (evn) => {
-        console.log(evn.data);
+        messageBox.innerHTML += `<div id="message">${evn.data}</div>`;
     });
 
     connection.addEventListener("icecandidate", (evn) => {
@@ -38,7 +40,7 @@ async function createAnswer() {
             chat: evn.channel
         };
         dataChannel.chat.addEventListener("message", (evn) => {
-            console.log(evn.data);
+            messageBox.innerHTML += `<div id="message">${evn.data}</div>`;
         });
     });
 
@@ -60,6 +62,11 @@ async function addAnswer() {
     }
 }
 
+function sendChatMessage() {
+    dataChannel.chat.send(chatInput.value);
+    messageBox.innerHTML += `<div id="message">${chatInput.value}</div>`;
+}
+
 offerText.addEventListener("input", (evn) => {
     if (!offerText.value.length == 0) {
         buttonOffer.disabled = true;
@@ -71,6 +78,8 @@ offerText.addEventListener("input", (evn) => {
         buttonAnswer.disabled = true;
     }
 });
+
+
 
 function buttonHandler(buttonValue) {
     if (buttonValue == "createOffer") {
@@ -92,7 +101,7 @@ function buttonHandler(buttonValue) {
 }
 
 async function init() {
-    outgoingStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+    outgoingStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
 
     outgoingStream.getTracks().forEach((track) => {
         connection.addTrack(track, outgoingStream);
