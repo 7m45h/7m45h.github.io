@@ -6,7 +6,7 @@ const divCams = document.getElementById("div-cams");
 const chatInput = document.getElementById("input-message");
 const messageBox = document.getElementById("messages");
 
-let connection = new RTCPeerConnection();
+let connection = new RTCPeerConnection({'iceServers': [{'urls': 'stun:stun.l.google.com:19302'}]});
 let incomingStream = new MediaStream();
 let outgoingStream;
 let dataChannel;
