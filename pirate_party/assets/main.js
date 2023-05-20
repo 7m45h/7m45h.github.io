@@ -11,6 +11,69 @@ let dataChannel;
 let offer;
 let answer;
 
+async function createOffer() {
+    connection.addEventListener("icecandidate", (evn) => {
+        if (evn.candidate) {
+            offerText.value = btoa(JSON.stringify(connection.localDescription));
+        }
+    });
+
+    offer = await connection.createOffer();
+    await connection.setLocalDescription(offer);
+}
+
+async function createAnswer() {
+    offer = JSON.parse(atob(offerText.value));
+
+    connection.addEventListener("icecandidate", (evn) => {
+        if (evn.candidate) {
+            answerText.value = btoa(JSON.stringify(connection.localDescription));
+        }
+    });
+
+    await connection.setRemoteDescription(offer);
+    answer = await connection.createAnswer();
+    await connection.setLocalDescription(answer);
+}
+
+async function addAnswer() {
+    answer = JSON.parse(atob(answerText.value));
+    if (!connection.currentRemoteDescription) {
+        connection.setRemoteDescription(answer);
+    }
+}
+
+offerText.addEventListener("input", (evn) => {
+    if (!offerText.value.length == 0) {
+        buttonOffer.disabled = true;
+        buttonAnswer.disabled = false;
+        buttonAnswer.value = "createAnswer";
+        buttonAnswer.innerText = "create answer";
+    } else {
+        buttonOffer.disabled = false;
+        buttonAnswer.disabled = true;
+    }
+});
+
+function buttonHandler(buttonValue) {
+    if (buttonValue == "createOffer") {
+        createOffer();
+        buttonOffer.disabled = true;
+        buttonAnswer.disabled = false;
+        buttonAnswer.value = "addAnswer";
+        buttonAnswer.innerText = "add answer";
+    } else if (buttonValue == "createAnswer") {
+        createAnswer();
+        buttonAnswer.disabled = true;
+        buttonOffer.disabled = false;
+        offerText.value = "";
+        answerText.value = "";
+    } else if (buttonValue == "addAnswer") {
+        addAnswer();
+        answerText.value = "";
+    }
+}
+
 async function init() {
     outgoingStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
 
@@ -28,40 +91,6 @@ async function init() {
             });
         });
     });
-}
-
-async function createOffer() {
-    connection.addEventListener("icecandidate", (evn) => {
-        if (evn.candidate) {
-            offerText.value = JSON.stringify(connection.localDescription);
-        }
-    });
-
-    offer = await connection.createOffer();
-    await connection.setLocalDescription(offer);
-}
-
-async function createAnswer() {
-    offer = JSON.parse(offerText.value);
-
-    connection.addEventListener("icecandidate", (evn) => {
-        if (evn.candidate) {
-            answerText.value = JSON.stringify(connection.localDescription);
-        }
-    });
-
-    await connection.setRemoteDescription(offer);
-    answer = await connection.createAnswer();
-    await connection.setLocalDescription(answer);
-}
-
-async function addAnswer() {
-    answer = JSON.parse(answerText.value);
-//    if (!connection.currentRemoteDescription) {
-//        connection.setRemoteDescription(answer);
-//    }
-
-    connection.setRemoteDescription(answer);
 }
 
 init();

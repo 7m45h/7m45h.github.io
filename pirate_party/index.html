@@ -26,8 +26,8 @@
             <div id="div-cams"></div>
             <div id="div-file"></div>
             <div id="div-conn">
-                <button id="conn-offer">make offer</button>
-                <button id="conn-answer" disabled>make answer</button>
+                <button id="conn-offer" value="createOffer" onclick="buttonHandler(this.value)">create offer</button>
+                <button id="conn-answer" value="createAnswer" onclick="buttonHandler(this.value)"  disabled>create answer</button>
                 <textarea id="text-offer"></textarea>
                 <textarea id="text-answer"></textarea>
             </div>
