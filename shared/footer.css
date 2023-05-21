@@ -1,4 +1,5 @@
 #footer {
+    grid-column: 1/2;
     grid-row: 3/4;
     justify-self: center;
     width: 0;
