@@ -1,11 +1,11 @@
 :root {
-    --background: #000000;
-    --black:      #09090b;
+    --black:      #282c34;
     --red:        #e05252;
     --green:      #43d08a;
     --yellow:     #ebde6b;
     --blue:       #528bff;
     --white:      #abb2bf;
+    --background: #1e1e1e;
 
     --border-normal: 2px solid;
     --font-size-normal: 14px;
