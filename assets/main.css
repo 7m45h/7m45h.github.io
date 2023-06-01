@@ -21,7 +21,6 @@
     align-items: center;
     border: var(--border-normal) var(--white);
     border-radius: var(--font-size-normal);
-    background: var(--black);
     transition-property: scale;
     transition-timing-function: ease-in-out;
     transition-duration: 100ms;
