@@ -1,3 +1,33 @@
 @import url("/shared/comman.css");
 @import url("/shared/header.css");
 @import url("/shared/footer.css");
+
+#main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.div-movie-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+}
+
+.div-movie-card img {
+    box-sizing: border-box;
+    width: 240px;
+    height: 320px;
+    border: var(--border-normal) var(--white);
+    border-radius: var(--font-size-normal);
+    object-fit: cover;
+}
+
+.div-movie-card .a-movie-title {
+    display: flex;
+    align-items: center;
+    height: calc(2 * var(--header-logo-size));
+}
