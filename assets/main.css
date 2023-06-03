@@ -23,7 +23,7 @@
     border-radius: var(--font-size-normal);
     transition-property: scale;
     transition-timing-function: ease-in-out;
-    transition-duration: 100ms;
+    transition-duration: 500ms;
 }
 
 #main > a:hover {
