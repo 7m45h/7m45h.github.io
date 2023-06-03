@@ -30,4 +30,5 @@
     display: flex;
     align-items: center;
     height: calc(2 * var(--header-logo-size));
+    font-size: 12px;
 }
