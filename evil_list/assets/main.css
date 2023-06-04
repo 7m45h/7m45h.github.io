@@ -15,7 +15,7 @@
     flex-direction: column;
     align-items: center;
     margin: 2%;
-    transition-duration: 500ms;
+    transition-duration: 200ms;
 }
 
 .div-movie-card img {
