@@ -10,6 +10,20 @@
     overflow-y: scroll;
 }
 
+#p-disclaimer {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 50%;
+    margin: 2%;
+    border: var(--border-normal) var(--white);
+   border-radius: var(--font-size-normal);
+    font-size: var(--font-size-normal);
+}
+
 .div-movie-card {
     display: flex;
     flex-direction: column;
