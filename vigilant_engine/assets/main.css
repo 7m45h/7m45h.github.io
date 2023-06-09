@@ -5,6 +5,33 @@
 #main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+#div-output {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: calc(var(--header-logo-size) * 2);
+}
+
+#output-pass {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    width: 80%;
+    height: 90%;
+    border: var(--border-normal) var(--white);
+}
+#output-length, #output-copy {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    width: 5%;
+    height: 90%;
+    border: var(--border-normal) var(--white);
 }
