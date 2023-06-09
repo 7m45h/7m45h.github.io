@@ -9,9 +9,29 @@
     align-items: center;
 }
 
+#div-config {
+    width: 80%;
+}
+
+#div-config > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1% 0px;
+}
+
+#div-config > div > label {
+    width: 100%;
+}
+
+#div-config #input-lenght {
+    width: 100%;
+    margin: 0px;
+}
+
 #div-output {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 80%;
     height: calc(var(--header-logo-size) * 2);
@@ -19,7 +39,7 @@
 
 #output-pass {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     box-sizing: border-box;
     width: 80%;
@@ -28,7 +48,7 @@
 }
 #output-length, #output-copy {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     box-sizing: border-box;
     width: 5%;
