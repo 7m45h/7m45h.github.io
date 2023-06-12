@@ -1,12 +1,16 @@
+const inputRange = document.getElementById("input-lenght");
+const outputField = document.getElementById("output-pass");
+
 let uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let lowercase = "abcdefghijklmnopqrstuvwxyz";
 let digits = "0123456789";
 let punctuations = "!\"#\$%&\\'\(\)\*\+,-\.\/:;<=>\?@\[\\\]\^_`{\|}~";
 let space = " ";
 
-let config_text;
+let configText = [...`${uppercase}${lowercase}${digits}${punctuations}${space}`];
+let configLen = inputRange.value;
 
-function update_input_text(checkbox) {
+function updateConfigText(checkbox) {
     switch (checkbox.id) {
         case "check-upper":
             uppercase = checkbox.checked ? "ABCDEFGHIJKLMNOPQRSTUVWXYZ" : "";
@@ -25,10 +29,17 @@ function update_input_text(checkbox) {
             break;
     }
 
-    config_text = f"{ uppercase, lowercase, digits, punctuations, space}";
-    generate_random_text(config_text);
+    configText = [...`${uppercase}${lowercase}${digits}${punctuations}${space}`];
+    genOutput();
 }
 
-function generate_random_text(config_text) {
-
+function genOutput() {
+    let output = "";
+    let configTextLen = configText.lenght;
+    for (let iterator = 0; iterator <= configLen; iterator++) {
+        output += configText[Math.floor(Math.random() * configTextLen)];
+    }
+    outputField.innerText = output;
 }
+
+genOutput();
