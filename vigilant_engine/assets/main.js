@@ -30,12 +30,16 @@ function updateConfigText(checkbox) {
     }
 
     configText = [...`${uppercase}${lowercase}${digits}${punctuations}${space}`];
+    if (configText.length <= 1) {
+        configText = "0";
+    }
     genOutput();
 }
 
 function genOutput() {
     let output = "";
     let configTextLen = configText.length;
+    configLen = inputRange.value;
     for (let iterator = 0; iterator <= configLen; iterator++) {
         output += configText[Math.floor(Math.random() * configTextLen)];
     }
