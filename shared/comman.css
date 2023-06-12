@@ -29,6 +29,7 @@ body {
 
 a {
     text-decoration: none;
+    font-style: italic;
     color: var(--white);
 }
 
