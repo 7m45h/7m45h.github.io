@@ -35,7 +35,7 @@ function updateConfigText(checkbox) {
 
 function genOutput() {
     let output = "";
-    let configTextLen = configText.lenght;
+    let configTextLen = configText.length;
     for (let iterator = 0; iterator <= configLen; iterator++) {
         output += configText[Math.floor(Math.random() * configTextLen)];
     }

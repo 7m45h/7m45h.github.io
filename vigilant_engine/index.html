@@ -24,32 +24,32 @@
             <div id="div-config">
                 <div>
                     <label for="check-upper">Uppercase</label>
-                    <input type="checkbox" id="check-upper" checked>
+                    <input type="checkbox" id="check-upper" onclick="updateConfigText(this)" checked>
                 </div>
                 <div>
                     <label for="check-lower">Lowercase</label>
-                    <input type="checkbox" id="check-lower" checked>
+                    <input type="checkbox" id="check-lower" onclick="updateConfigText(this)" checked>
                 </div>
                 <div>
                     <label for="check-digits">Digits</label>
-                    <input type="checkbox" id="check-digits" checked>
+                    <input type="checkbox" id="check-digits" onclick="updateConfigText(this)" checked>
                 </div>
                 <div>
                     <label for="check-punct">Punctuations</label>
-                    <input type="checkbox" id="check-punct" checked>
+                    <input type="checkbox" id="check-punct" onclick="updateConfigText(this)" checked>
                 </div>
                 <div>
                     <label for="check-space">space</label>
-                    <input type="checkbox" id="check-space" checked>
+                    <input type="checkbox" id="check-space" onclick="updateConfigText(this)" checked>
                 </div>
                 <div>
-                    <input type="range" id="input-lenght" min="8" max="100" value="8">
+                    <input type="range" id="input-lenght" min="8" max="100" value="8" oninput="">
                 </div>
             </div>
             <div id="div-output">
                 <div id="output-pass">pass123$^%890</div>
                 <div id="output-length">10</div>
-                <div id="output-gen">&#10227;</div>
+                <div id="output-gen" onclick="genOutput()">&#10227;</div>
             </div>
         </main>
         <footer id="footer"></footer>

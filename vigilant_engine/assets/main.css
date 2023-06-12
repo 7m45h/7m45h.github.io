@@ -55,3 +55,12 @@
     height: 90%;
     border: var(--border-normal) var(--white);
 }
+
+#output-gen {
+    user-select: none;
+    cursor: pointer;
+}
+
+#output-gen:active {
+    scale: 96%;
+}
