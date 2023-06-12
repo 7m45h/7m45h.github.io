@@ -46,7 +46,7 @@
     height: 90%;
     border: var(--border-normal) var(--white);
 }
-#output-length, #output-copy {
+#output-length, #output-gen {
     display: flex;
     justify-content: center;
     align-items: center;
