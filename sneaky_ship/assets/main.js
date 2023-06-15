@@ -16,7 +16,7 @@ function renderEnv() {
 function main() {
     updateEnv();
     renderEnv();
-    window.requestAnimationFrame(main);
+    // window.requestAnimationFrame(main);
 }
 
 main();
