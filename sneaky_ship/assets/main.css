@@ -1,3 +1,8 @@
 @import url("/shared/styles/comman.css");
 @import url("/shared/styles/header.css");
 @import url("/shared/styles/footer.css");
+
+#main-canvas {
+    width: 100%;
+    height: 100%;
+}

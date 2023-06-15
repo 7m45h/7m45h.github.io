@@ -8,3 +8,7 @@ function updateFooter() {
 }
 
 main.addEventListener("scroll", updateFooter);
+
+// MAIN
+
+const canv = document.getElementById("main-canvas");
