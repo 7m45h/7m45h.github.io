@@ -11,4 +11,4 @@ main.addEventListener("scroll", updateFooter);
 
 // MAIN
 
-const canv = document.getElementById("main-canvas");
+const canv = document.getElementById("canvas");
