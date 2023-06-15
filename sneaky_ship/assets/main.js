@@ -1,14 +1,22 @@
-// UI
-
-const main = document.getElementById("main");
-const footer = document.getElementById("footer");
-
-function updateFooter() {
-    footer.style.width = (main.scrollTop / (main.scrollHeight - main.clientHeight)) * 100 + "%";
-}
-
-main.addEventListener("scroll", updateFooter);
-
 // MAIN
 
-const canv = document.getElementById("canvas");
+const _canv = document.getElementById("canvas");
+const _ctx = _canv.getContext("2d");
+
+_ctx.fillStyle = "red";
+
+function updateEnv() {
+}
+
+function renderEnv() {
+    _ctx.clearRect( 0, 0, _canv.width, _canv.height );
+    _ctx.fillRect( 10, 10, 10, 10 );
+}
+
+function main() {
+    updateEnv();
+    renderEnv();
+    window.requestAnimationFrame(main);
+}
+
+main();
