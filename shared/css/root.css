@@ -6,4 +6,29 @@
     --blue:       #528bff;
     --white:      #abb2bf;
     --background: #1e1e1e;
+
+    --font-head: 16px;
+    --font-norm: 14px;
+}
+
+body {
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    color: var(--white);
+    font-weight: bold;
+    font-family: monospace;
+    background: var(--background);
+}
+
+#nav-main {
+    width: 20%;
+    height: 100%;
+}
+
+#main-main {
+    flex: 1;
+    min-width: 80%;
+    height: 100%;
 }
