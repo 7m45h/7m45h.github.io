@@ -28,24 +28,48 @@ a {
 }
 
 #nav-main {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
     width: 20%;
     height: 100%;
 }
 
+#nav-main .nav-items {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    user-select: none;
+}
+
+#nav-main .nav-child::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    background: var(--white);
+    transition-property: width;
+    transform-origin: left;
+    transition-duration: 500ms;
+}
+
+#nav-main .nav-child:hover::after {
+    width: 100%;
+}
+
 #nav-main .nav-title {
     font-size: var(--font-head);
-    margin: 20% 10% 10% 10%;
+    width: 70%;
+    margin-right: 10%;
+    margin-bottom: 10%;
 }
 
-#nav-main .nav-items {
+#nav-main .nav-child {
+    cursor: pointer;
     font-size: var(--font-norm);
-    margin: 0px 10% 5% 20%;
-}
-
-#nav-main .nav-title > div, #nav-main .nav-items > div {
-    width: 100%;
-    height: 2px;
-    background: var(--green);
+    width: 60%;
+    margin-right: 10%;
+    margin-bottom: 5%;
 }
 
 #main-main {
