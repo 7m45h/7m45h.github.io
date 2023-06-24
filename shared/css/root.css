@@ -49,6 +49,7 @@ h1 {
 
 .nav-title {
     width: 100%;
+    user-select: none;
     font-size: var(--font-head);
     margin-bottom: 10%;
 }
@@ -62,6 +63,8 @@ h1 {
     display: block;
     width: 80%;
     margin: 0px 0px 5% auto;
+    cursor: pointer;
+    user-select: none;
     font-size: var(--font-norm);
 }
 
