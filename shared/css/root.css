@@ -27,6 +27,7 @@ h1 {
 }
 
 a {
+    cursor: pointer;
     text-decoration: none;
     font-style: italic;
     color: var(--white);
@@ -44,7 +45,7 @@ a {
     flex: 1;
 }
 
-#div-random-img {
+#div-rand-img {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,13 +54,13 @@ a {
     height: 100%;
 }
 
-#div-random-img > img {
+#div-rand-img > img {
     width: 80%;
     height: 80%;
     object-fit: cover;
 }
 
-#div-random-img > a {
+#div-rand-img > a {
     font-size: var(--font-norm);
 }
 
