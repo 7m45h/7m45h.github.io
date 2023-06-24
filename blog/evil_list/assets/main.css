@@ -1,21 +1,2 @@
 @import url("/shared/css/root.css");
-
-.div-blog-page {
-    display: block;
-    width: 60%;
-    height: 100%;
-    margin: auto;
-}
-
-.h1-blog-bd {
-    font-size: var(--font-head);
-    width: max-content;
-    margin-left: auto;
-    margin-top: var(--font-head);
-    margin-bottom: calc( var(--font-head) * 2 );
-}
-
-.p-blog-cont {
-    font-size: var(--font-norm);
-    width: 100%;
-}
+@import url("/shared/css/blog.css");
