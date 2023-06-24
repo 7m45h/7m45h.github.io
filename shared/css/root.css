@@ -111,7 +111,6 @@ a {
     font-size: var(--font-norm);
     white-space: nowrap;
     overflow: hidden;
-    transition-duration: 500ms;
 }
 
 .nav-child::after {
@@ -120,8 +119,7 @@ a {
     width: 0px;
     height: 2px;
     background: var(--white);
-    transition-property: width;
-    transition-duration: 500ms;
+    transition: width 500ms;
 }
 
 .anc-ext:hover {
