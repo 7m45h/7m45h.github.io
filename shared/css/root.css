@@ -42,28 +42,26 @@ a {
     scroll-behavior: smooth;
 }
 
-#div-rand-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+.div-page {
     width: 100%;
     height: 100%;
 }
 
-#div-rand-img > img {
+.div-rand-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.div-rand-img > img {
     width: 80%;
     height: 80%;
     object-fit: cover;
 }
 
-#div-rand-img > a {
+.div-rand-img > a {
     font-size: var(--font-norm);
-}
-
-#div-content {
-    width: 100%;
-    height: 100%;
 }
 
 .anc-ext {
