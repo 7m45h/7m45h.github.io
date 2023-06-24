@@ -22,6 +22,10 @@ body {
     background: var(--background);
 }
 
+h1 {
+    margin: 0px;
+}
+
 a {
     cursor: pointer;
     text-decoration: none;
