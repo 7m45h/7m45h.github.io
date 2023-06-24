@@ -1,32 +1,48 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="tmash, 7m45h">
-        <meta name="description" content="home page for 7m45h">
+        <title>template</title>
         <meta name="author" content="tmash">
-        <title>7m45h.github.io</title>
-        <link rel="icon" type="image/gif" sizes="420x420" href="/shared/assets/logo.png">
+        <meta name="description" content="template index.html">
+        <meta name="theme-color" content="#1e1e1e">
+        <meta property="og:title" content="template">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://7m45h.github.io/">
+        <meta property="og:image" content="https://7m45h.github.io/shared/images/logo.png">
+        <meta property="og:site_name" content="7m45h.github.io">
+        <meta property="og:description" content="template index.html">
+        <meta property="og:image:alt" content="le logo.png">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="template">
+        <meta name="twitter:description" content="template index.html">
+        <meta name="twitter:site" content="@7m45h.github.io">
+        <meta name="twitter:image" content="https://7m45h.github.io/shared/images/logo.png">
+        <meta name="twitter:image:alt" content="le logo.png">
+        <meta name="twitter:creator" content="@tmash">
+        <link rel="icon" type="img/png" sizes="420x420" href="/shared/images/logo.png">
         <link rel="stylesheet" type="text/css" href="./assets/main.css">
-        <script src="./assets/main.js" defer></script>
+        <script src="/shared/scripts/base.js" defer></script>
     </head>
     <body>
-        <nav id="header">
-            <a id="a-home" href="/">
-                <img src="/shared/assets/logo.png">
-            </a>
-            <a id="a-repo" href="https://github.com/7m45h/7m45h.github.io" target="_blank">
-                <h1>7m45h.github.io &#8599;</h1>
-            </a>
+        <nav id="nav-main">
+            <div class="div-nav-prnt">
+                <a class="nav-title anc-ext" href="/">template &#8599;</a>
+                <div class="nav-child-ctnr">
+                    <a class="nav-child" href="./#div-content">contents</a>
+                    <a class="nav-child" href="./#div-rand-img">rand_img</a>
+                    <a class="nav-child" href="/">home</a>
+                </div>
+            </div>
         </nav>
-        <main id="main">
-            <a href="/pirate_party/">pirate_party</a>
-            <a href="/scary_library/">scary_library</a>
-            <a href="/evil_list/">evil_list</a>
-            <a href="/vigilant_engine/">vigilant_engine</a>
-            <a href="/sneaky_ship/">sneaky_ship</a>
+        <main id="main-main">
+            <div id="div-content">
+            </div>
+            <div id="div-rand-img">
+                <img src="https://picsum.photos/1920/1080" alt="Random image from awsome site picsum.photos" title="Random image from awsome site picsum.photos" loading="lazy">
+                <a class="anc-ext" href="https://github.com/DMarby/picsum-photos" target="_blank">&#169;picsum.photos  &#8599;</a>
+            </div>
         </main>
-        <footer id="footer"></footer>
     </body>
 </html>
