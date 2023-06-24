@@ -32,6 +32,8 @@ h1 {
     justify-content: center;
     width: 20%;
     height: 100%;
+    overflow: hidden;
+    transition: 500ms;
 }
 
 #main-main {
@@ -49,9 +51,11 @@ h1 {
 
 .nav-title {
     width: 100%;
+    height: max-content;
     user-select: none;
     font-size: var(--font-head);
-    margin-bottom: 10%;
+    margin-bottom: calc( var(--font-head) * 2 );
+    white-space: nowrap;
 }
 
 .nav-child-ctnr {
@@ -62,10 +66,12 @@ h1 {
 .nav-child {
     display: block;
     width: 80%;
-    margin: 0px 0px 5% auto;
+    margin: 0px 0px var(--font-norm) auto;
     cursor: pointer;
     user-select: none;
     font-size: var(--font-norm);
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .nav-child::after {
