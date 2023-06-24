@@ -43,6 +43,7 @@ a {
 #main-main {
     flex: 1;
     overflow-y: hidden;
+    scroll-behavior: smooth;
 }
 
 #div-rand-img {
