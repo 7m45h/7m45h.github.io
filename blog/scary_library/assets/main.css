@@ -1,2 +1,11 @@
 @import url("/shared/css/root.css");
 @import url("/shared/css/blog.css");
+
+#list-web {
+    font-size: var(--font-norm);
+    margin: 2em 0px;
+}
+
+#list-web li {
+    margin: 1em 0px;
+}
