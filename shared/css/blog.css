@@ -1,5 +1,5 @@
 .div-page-blog {
-    width: 80%;
+    width: calc( 80vw * 0.8 );
     height: 100%;
     margin: 0px auto;
     padding: var(--font-head) var(--font-head) 0px var(--font-head);
