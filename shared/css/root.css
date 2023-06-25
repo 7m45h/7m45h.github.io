@@ -39,8 +39,8 @@ a {
 }
 
 #nav-main {
-    width: 20vw;
-    height: 100vh;
+    width: 20%;
+    height: 100%;
     overflow: hidden;
     transition: width 500ms 150ms, opacity 500ms;
 }
@@ -52,7 +52,7 @@ a {
 }
 
 .div-page {
-    width: 80vw;
+    width: 80%;
     height: 100%;
     margin: auto;
 }
