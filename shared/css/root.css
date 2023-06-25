@@ -39,8 +39,8 @@ a {
 }
 
 #nav-main {
-    width: 20%;
-    height: 100%;
+    width: 20vw;
+    height: 100vh;
     overflow: hidden;
     transition: width 500ms 150ms, opacity 500ms;
 }
@@ -52,8 +52,9 @@ a {
 }
 
 .div-page {
-    width: 100%;
+    width: 80vw;
     height: 100%;
+    margin: auto;
 }
 
 .div-rand-img {
@@ -64,7 +65,7 @@ a {
 }
 
 .div-rand-img > img {
-    width: 80%;
+    width: 90%;
     height: 80%;
     object-fit: cover;
 }
@@ -91,7 +92,7 @@ a {
     width: 100%;
     user-select: none;
     font-size: var(--font-head);
-    margin-bottom: calc( var(--font-head) * 2 );
+    margin-bottom: 2em;
     white-space: nowrap;
 }
 
@@ -103,7 +104,7 @@ a {
 .nav-child {
     display: block;
     width: 80%;
-    margin: 0px 0px var(--font-norm) auto;
+    margin: 0px 0px 1em auto;
     cursor: pointer;
     user-select: none;
     font-size: var(--font-norm);

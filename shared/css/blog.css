@@ -1,23 +1,19 @@
-.div-blog-page {
-    display: block;
-    width: 60vw;
+.div-page-blog {
+    width: 80%;
     height: 100%;
-    padding: 0px 10vw;
-    margin: auto;
+    margin: 0px auto;
+    padding: var(--font-head) var(--font-head) 0px var(--font-head);
     overflow-y: scroll;
 }
 
-.h1-blog-bd {
-    font-size: var(--font-head);
+.h1-blog-date {
+    display: block;
     width: max-content;
-    margin-left: auto;
-    margin-top: var(--font-head);
-    margin-bottom: calc( var(--font-head) * 2 );
+    font-size: var(--font-head);
+    margin: 0px 0px 2em auto;
 }
 
 .p-blog-cont {
     font-size: var(--font-norm);
-    width: 100%;
-    margin-top: var(--font-head);
-    margin-bottom: calc( var(--font-head) * 2 );
+    margin-top: 1em;
 }
