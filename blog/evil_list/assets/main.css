@@ -19,13 +19,14 @@
     display: block;
     width: 240px;
     height: 320px;
-    margin: var(--font-norm);
+    margin: var(--font-norm) auto;
     object-fit: cover;
-    border-radius: 14px;
+    border-radius: var(--font-norm);
 }
 
 .div-movie-card a {
     display: block;
+    font-size: var(--font-norm);
     width: max-content;
     margin: auto;
 }

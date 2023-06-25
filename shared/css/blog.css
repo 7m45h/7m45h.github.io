@@ -1,8 +1,8 @@
 .div-blog-page {
     display: block;
-    width: 70%;
+    width: 60vw;
     height: 100%;
-    padding: 0px 10%;
+    padding: 0px 10vw;
     margin: auto;
     overflow-y: scroll;
 }
