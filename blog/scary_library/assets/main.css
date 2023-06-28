@@ -2,10 +2,11 @@
 @import url("/shared/css/blog.css");
 
 #list-web {
+    font-weight: normal;
     font-size: var(--font-norm);
     margin: 2em 0px;
 }
 
 #list-web li {
-    margin: 1em 0px;
+    margin: 1em 0px 0px 0px;
 }
