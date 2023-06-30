@@ -36,6 +36,7 @@ a {
     text-decoration: none;
     font-style: italic;
     color: var(--white);
+    font-size: var(--font-norm);
 }
 
 #nav-main {

@@ -15,16 +15,12 @@
 }
 
 .blog-item {
-    margin: 1em auto;
+    margin: 2em auto;
 }
 
 .p-blog-cont {
     font-weight: normal;
     font-size: var(--font-norm);
-}
-
-.div-blog-image {
-    padding: 2em;
 }
 
 .div-blog-image img {
