@@ -1,2 +1,7 @@
 @import url("/shared/css/root.css");
 @import url("/shared/css/blog.css");
+
+.div-blog-video video {
+  width: 80%;
+  aspect-ratio: 16/9;
+}

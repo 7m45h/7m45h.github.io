@@ -23,14 +23,14 @@
     font-size: var(--font-norm);
 }
 
-.div-blog-image img {
+.div-blog-image img, .div-blog-video video {
     display: block;
     margin: 0px auto;
     border-radius: 1em;
     object-fit: cover;
 }
 
-.div-blog-image a {
+.div-blog-image a, .div-blog-video a {
     display: block;
     width: max-content;
     margin: 1em auto 0px auto;
