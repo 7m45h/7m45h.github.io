@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rands on </title>
+    <link>https://7m45h.github.io/rand/</link>
+    <description>Recent content in Rands on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 08 Jul 2023 11:21:22 +0530</lastBuildDate><atom:link href="https://7m45h.github.io/rand/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>rand_one</title>
+      <link>https://7m45h.github.io/rand/rand_one/</link>
+      <pubDate>Sat, 08 Jul 2023 11:21:22 +0530</pubDate>
+      
+      <guid>https://7m45h.github.io/rand/rand_one/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

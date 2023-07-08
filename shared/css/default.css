@@ -1,0 +1,28 @@
+@import url("/shared/css/root.css");
+@import url("/shared/css/nav_tree.css");
+@import url("/shared/css/blog_page.css");
+
+nav {
+  width: 20vw;
+  height: 100vh;
+  overflow: hidden;
+  transition: width 500ms 150ms, opacity 500ms;
+}
+
+main {
+  flex: 1;
+  height: 100vh;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+main > div {
+  width: 64%;
+  height: 100%;
+  margin: 0px auto;
+  overflow: auto;
+}
+
+.anc-ext:hover {
+  color: var(--green);
+}
