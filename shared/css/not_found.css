@@ -1,0 +1,5 @@
+main > h1 { 
+  width: max-content;
+  font-size: 80vh;
+  margin: auto;
+}

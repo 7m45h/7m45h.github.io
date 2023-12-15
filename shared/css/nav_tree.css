@@ -1,0 +1,38 @@
+.nav-tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  margin: 0px auto;
+}
+
+.nav-tree > h1 {
+  font-size: var(--font-head);
+  margin-right: auto;
+  white-space: nowrap;
+}
+
+.nav-tree > div {
+  width: 80%;
+  margin-left: auto;
+}
+
+.nav-tree > div > a {
+  display: block;
+  margin: 1em 0px;
+}
+
+.nav-tree > div > a::after {
+  display: block;
+  content: '';
+  width: 0px;
+  height: 2px;
+  background-color: var(--white);
+  transition: width 500ms;
+}
+
+.nav-tree > div > a:hover::after {
+  width: 100%;
+}
