@@ -6,4 +6,9 @@
   --blue:       #528bff;
   --white:      #abb2bf;
   --background: #000000;
+
+  --fsize-head: 16px;
+  --fsize-norm: 14px;
+
+  --line-width: 2px;
 }

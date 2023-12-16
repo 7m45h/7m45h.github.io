@@ -1,0 +1,10 @@
+#nav-bar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition: width 500ms 150ms, opacity 500ms;
+  width: 0px;
+  height: 100vh;
+}

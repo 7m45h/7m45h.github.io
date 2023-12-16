@@ -1,1 +1,25 @@
 @import url("/shared/css/root.css");
+
+body {
+  user-select: none;
+  white-space: nowrap;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: var(--background);
+  font-size: var(--fsize-norm);
+  font-family: monospace;
+  font-weight: bold;
+  color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  font-size: var(--fsize-head);
+}
+
+a {
+  text-decoration: none;
+  font-style: italic;
+  color: inherit;
+}
