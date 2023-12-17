@@ -1,27 +1,21 @@
 figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: var(--fsize-norm);
   width: 60%;
 }
 
 figure img {
+  display: block;
   object-fit: none;
   border-radius: var(--fsize-norm);
-  margin-bottom: var(--half-f-norm);
+  margin: 0px auto var(--half-f-norm) auto;
   width: 80%;
   height: 50vh;
 }
 
-figure figcaption {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 figure figcaption a {
-  margin-bottom: var(--half-f-norm);
+  display: block;
+  margin: 0px auto var(--half-f-norm) auto;
+  width: min-content;
 }
 
 figure figcaption a::before {
