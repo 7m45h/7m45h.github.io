@@ -7,11 +7,11 @@ figure {
 }
 
 figure img {
-  object-fit: cover;
+  object-fit: none;
   border-radius: var(--fsize-norm);
   margin-bottom: var(--half-f-norm);
   width: 80%;
-  height: 40vh;
+  height: 50vh;
 }
 
 figure figcaption {
