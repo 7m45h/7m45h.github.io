@@ -1,34 +1,35 @@
-figure {
+.video {
   margin-bottom: var(--fsize-norm);
   width: 60%;
 }
 
-figure img {
+.video video {
   display: block;
-  object-fit: none;
   border-radius: var(--fsize-norm);
   margin: 0px auto var(--half-f-norm) auto;
   height: 50vh;
 }
 
-figure figcaption a {
+.video .video-caption a {
   display: block;
   margin: 0px auto var(--half-f-norm) auto;
   width: min-content;
 }
 
-figure figcaption a::before {
+.video .video-caption a::before {
   content: '©';
 }
 
 /*
-  img template
+  video template
 
-  <figure>
-    <img src="" alt="" loading="lazy">
-    <figcaption>
+  <div class="video">
+    <video controls>
+      <source src="" type="video/">
+    </video>
+    <div class="video-caption">
       <a class="anc-ext" href="" target="_blank"></a>
       <a class="anc-ext" href="" target="_blank"></a>
-    </figcaption>
-  </figure>
+    </div>
+  </div>
 */
