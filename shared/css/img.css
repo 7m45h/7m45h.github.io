@@ -27,3 +27,15 @@ figure figcaption a {
 figure figcaption a::before {
   content: '©';
 }
+
+/*
+  img template
+
+  <figure>
+    <img src="" title="">
+    <figcaption>
+      <a class="anc-ext" href="" target="_blank"></a>
+      <a class="anc-ext" href="" target="_blank"></a>
+    </figcaption>
+  </figure>
+*/
