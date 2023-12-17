@@ -1,7 +1,4 @@
 #r-panel {
-  position: fixed;
-  top: 0px;
-  right: 0px;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr);

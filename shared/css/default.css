@@ -3,6 +3,9 @@
 body {
   user-select: none;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0px;
   width: 100vw;
   height: 100vh;
@@ -16,6 +19,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0px;
   font-size: var(--fsize-head);
+}
+
+figure {
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
 }
 
 a {

@@ -10,5 +10,8 @@
   --fsize-head: 16px;
   --fsize-norm: 14px;
 
+  --half-f-head: calc(var(--fsize-head) / 2);
+  --half-f-norm: calc(var(--fsize-norm) / 2);
+
   --line-width: 2px;
 }

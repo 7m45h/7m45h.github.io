@@ -1,0 +1,29 @@
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--fsize-norm);
+  width: 60%;
+}
+
+figure img {
+  object-fit: cover;
+  border-radius: var(--fsize-norm);
+  margin-bottom: var(--half-f-norm);
+  width: 80%;
+  height: 40vh;
+}
+
+figure figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figure figcaption a {
+  margin-bottom: var(--half-f-norm);
+}
+
+figure figcaption a::before {
+  content: '©';
+}
