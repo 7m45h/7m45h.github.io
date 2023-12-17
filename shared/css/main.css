@@ -16,7 +16,7 @@ main .main-section {
   padding: var(--fsize-norm) 0px var(--fsize-norm) 0px;
 }
 
-main .main-section p {
+main p {
   white-space: normal;
   margin-bottom: 1em;
   width: 60vw;
