@@ -8,7 +8,7 @@ async function setRandIMG(randIMG) {
   imgInfo = await imgInfo.json();
 
   randIMG.innerHTML = `
-    <img src="https://picsum.photos/seed/${randID}/1280/720/" title="random image from awsome site picsum.photos">
+    <img src="https://picsum.photos/seed/${randID}/1280/720/" alt="random image from awsome site picsum.photos" loading="lazy">
     <figcaption>
       <a class="anc-ext" href="https://github.com/DMarby/picsum-photos" target="_blank">picsum.photos</a>
       <a class="anc-ext" href="${imgInfo.url}" target="_blank">${imgInfo.author}</a>
