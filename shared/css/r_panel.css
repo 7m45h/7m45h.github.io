@@ -1,0 +1,21 @@
+#r-panel {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  opacity: 0;
+  overflow: hidden;
+  transition: width 500ms 150ms, opacity 500ms;
+  width: 0px;
+  height: 100vh;
+}
+
+#r-panel footer {
+  grid-column: 1 / 11;
+  grid-row: 10 / 11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

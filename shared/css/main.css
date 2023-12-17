@@ -1,0 +1,8 @@
+main {
+  transition: width 500ms 150ms;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 100%;
+  background: var(--green);
+}
