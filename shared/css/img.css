@@ -4,7 +4,7 @@ figure {
 
 figure img {
   display: block;
-  object-fit: none;
+  object-fit: cover;
   border-radius: var(--fsize-norm);
   margin: 0px auto var(--gap-norm) auto;
   height: 50vh;
