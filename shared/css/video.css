@@ -1,18 +1,17 @@
 .video {
-  margin-bottom: var(--fsize-norm);
   width: 60%;
 }
 
 .video video {
   display: block;
   border-radius: var(--fsize-norm);
-  margin: 0px auto var(--half-f-norm) auto;
+  margin: 0px auto var(--gap-norm) auto;
   height: 50vh;
 }
 
 .video .video-caption a {
   display: block;
-  margin: 0px auto var(--half-f-norm) auto;
+  margin: 0px auto var(--gap-norm) auto;
   width: min-content;
 }
 

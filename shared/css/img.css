@@ -1,5 +1,4 @@
 figure {
-  margin-bottom: var(--fsize-norm);
   width: 60%;
 }
 
@@ -7,13 +6,13 @@ figure img {
   display: block;
   object-fit: none;
   border-radius: var(--fsize-norm);
-  margin: 0px auto var(--half-f-norm) auto;
+  margin: 0px auto var(--gap-norm) auto;
   height: 50vh;
 }
 
 figure figcaption a {
   display: block;
-  margin: 0px auto var(--half-f-norm) auto;
+  margin: 0px auto var(--gap-norm) auto;
   width: min-content;
 }
 

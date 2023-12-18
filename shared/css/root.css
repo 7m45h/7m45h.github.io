@@ -13,5 +13,8 @@
   --half-f-head: calc(var(--fsize-head) / 2);
   --half-f-norm: calc(var(--fsize-norm) / 2);
 
+  --gap-head: var(--fsize-head);
+  --gap-norm: var(--fsize-norm);
+
   --line-width: 2px;
 }

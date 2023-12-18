@@ -7,7 +7,7 @@
 }
 
 .nav-menu-title {
-  margin-bottom: 1em;
+  margin-bottom: var(--gap-head);
   margin-left: 20%;
   width: 80%;
 }
@@ -15,7 +15,7 @@
 .nav-menu-index {
   margin-left: 30%;
   width: 60%;
-  padding-bottom: 1em;
+  padding-bottom: var(--gap-norm);
 }
 
 .nav-menu-index::after {

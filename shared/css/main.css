@@ -1,6 +1,6 @@
 main {
   scroll-behavior: smooth;
-  overflow-y: scroll;
+  overflow-y: hidden;
   transition: width 500ms 150ms;
   width: 100%;
   height: 100%;
@@ -10,14 +10,19 @@ main .main-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  overflow-y: auto;
   width: 100%;
-  height: calc(100% - var(--fsize-norm) * 2); /* 100% - padding top & bottom*/
-  padding: var(--fsize-norm) 0px var(--fsize-norm) 0px;
+  height: 100%;
 }
 
 main p {
   white-space: normal;
-  margin-bottom: 1em;
   width: 60vw;
+}
+
+main p,
+main figure,
+main .video {
+  margin-top: var(--gap-head);
+  margin-bottom: var(--gap-head);
 }
