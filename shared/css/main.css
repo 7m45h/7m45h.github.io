@@ -1,6 +1,6 @@
 main {
   scroll-behavior: smooth;
-  overflow-y: hidden;
+  overflow-y: scroll;
   transition: width 500ms 150ms;
   width: 100%;
   height: 100%;
