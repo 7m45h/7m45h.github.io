@@ -24,16 +24,16 @@ main p {
   width: 60vw;
 }
 
-li {
+main ul {
+  width: 60%;
+}
+
+main li {
   box-sizing: border-box;
   border-left: var(--line-width) solid var(--white);
   border-bottom: var(--line-width) solid var(--white);
   width: 100%;
   padding: var(--gap-norm) 0px var(--gap-norm) var(--gap-norm);
-}
-
-ul {
-  width: 60%;
 }
 
 main iframe {
@@ -47,7 +47,6 @@ main h3, main h4,
 main h5, main h6,
 main p,
 main ul,
-main ol,
 main figure,
 main .video, 
 main iframe {
