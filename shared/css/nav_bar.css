@@ -1,7 +1,7 @@
 #nav-bar {
   overflow: hidden;
-  opacity: 0;
+  opacity: 1;
   transition: width 500ms 150ms, opacity 500ms;
-  width: 0px;
+  width: 25vw;
   height: 100vh;
 }

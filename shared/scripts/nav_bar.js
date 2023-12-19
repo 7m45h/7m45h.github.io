@@ -1,6 +1,6 @@
 const navBar = document.getElementById("nav-bar");
 
-let navIsOpen = false;
+let navIsOpen = true;
 
 window.addEventListener("mousemove", (event) => {
   if ( !navIsOpen && event.clientX < window.innerWidth * 0.1 ) {
