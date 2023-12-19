@@ -1,64 +1,33 @@
-@import url("/shared/css/root.css");
-@import url("/shared/css/nav_tree.css");
-
 body {
+  white-space: nowrap;
   display: flex;
-  background-color: var(--background);
-  color: var(--white);
-  font-family: monospace;
-  font-weight: bold;
-  font-size: var(--font-norm);
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
   width: 100vw;
   height: 100vh;
+  background: var(--background);
+  font-size: var(--fsize-norm);
+  font-family: monospace;
+  font-weight: bold;
+  color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6 {
   margin: 0px;
-  user-select: none;
+  font-size: var(--fsize-head);
 }
 
-nav {
-  width: 20vw;
-  height: 100vh;
-  overflow: hidden;
-  transition: width 500ms 150ms, opacity 500ms;
+figure {
+  margin: 0px;
 }
 
-main {
-  flex: 1;
-  height: 100vh;
-  overflow: hidden;
-  scroll-behavior: smooth;
-}
-
-main > div {
-  width: 64%;
-  height: 100%;
-  margin: 0px auto;
-  overflow: auto;
-}
-
-h1 {
-  font-size: var(--font-head);
+p {
   margin: 0px;
 }
 
 a {
   text-decoration: none;
   font-style: italic;
-  color: var(--white);
-  transition: color 500ms;
-}
-
-#btn-nav {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-size: var(--font-head);
-  padding: 0.5em;
-}
-
-.anc-ext::after {
-  content: '↗';
-}
-
-.anc-ext:hover {
-  color: var(--green);
+  color: inherit;
 }

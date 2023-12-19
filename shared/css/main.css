@@ -1,0 +1,55 @@
+main {
+  scroll-behavior: smooth;
+  overflow: hidden;
+  transition: width 500ms 150ms;
+  width: 100%;
+  height: 100%;
+}
+
+main .main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+  justify-content: space-evenly;
+}
+
+main p {
+  white-space: normal;
+  width: 60vw;
+}
+
+main ul {
+  width: 60%;
+}
+
+main li {
+  box-sizing: border-box;
+  border-left: var(--line-width) solid var(--white);
+  border-bottom: var(--line-width) solid var(--white);
+  width: 100%;
+  padding: var(--gap-norm) 0px var(--gap-norm) var(--gap-norm);
+}
+
+main iframe {
+  border: none;
+  width: 60vw;
+  height: 100%;
+}
+
+main h1, main h2,
+main h3, main h4,
+main h5, main h6,
+main p,
+main ul,
+main figure,
+main .video, 
+main iframe {
+  margin-top: var(--gap-head);
+  margin-bottom: var(--gap-head);
+}

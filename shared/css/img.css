@@ -1,0 +1,33 @@
+figure {
+  width: 60%;
+}
+
+figure img {
+  display: block;
+  object-fit: cover;
+  border-radius: var(--fsize-norm);
+  margin: 0px auto var(--gap-norm) auto;
+  height: 50vh;
+}
+
+figure figcaption a {
+  display: block;
+  margin: 0px auto var(--gap-norm) auto;
+  width: min-content;
+}
+
+figure figcaption a::before {
+  content: '©';
+}
+
+/*
+  img template
+
+  <figure>
+    <img src="" alt="" loading="lazy">
+    <figcaption>
+      <a class="anc-ext" href="" target="_blank"></a>
+      <a class="anc-ext" href="" target="_blank"></a>
+    </figcaption>
+  </figure>
+*/

@@ -7,6 +7,14 @@
   --white:      #abb2bf;
   --background: #000000;
 
-  --font-head: 16px;
-  --font-norm: 14px;
+  --fsize-head: 16px;
+  --fsize-norm: 14px;
+
+  --half-f-head: calc(var(--fsize-head) / 2);
+  --half-f-norm: calc(var(--fsize-norm) / 2);
+
+  --gap-head: var(--fsize-head);
+  --gap-norm: var(--fsize-norm);
+
+  --line-width: 2px;
 }

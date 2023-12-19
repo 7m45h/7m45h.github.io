@@ -1,0 +1,11 @@
+.anc-ext {
+  transition: color 500ms;
+}
+
+.anc-ext:hover {
+  color: var(--green);
+}
+
+.anc-ext::after {
+  content: ' ↗';
+}

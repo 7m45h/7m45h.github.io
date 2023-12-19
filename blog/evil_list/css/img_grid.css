@@ -1,0 +1,12 @@
+main .main-section {
+  flex-direction: unset;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+figure {
+  width: unset;
+  margin-left: var(--gap-head);
+  margin-right: var(--gap-head);
+}
