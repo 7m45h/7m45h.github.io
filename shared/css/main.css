@@ -24,6 +24,9 @@ main p {
   width: 60vw;
 }
 
+main h1, main h2,
+main h3, main h4,
+main h5, main h6,
 main p,
 main figure,
 main .video {
