@@ -30,10 +30,14 @@ main ul {
 
 main li {
   box-sizing: border-box;
-  border-left: var(--line-width) solid var(--white);
-  border-bottom: var(--line-width) solid var(--white);
+  border-left: var(--line-width) solid var(--color-fg);
+  border-bottom: var(--line-width) solid var(--color-fg);
   width: 100%;
   padding: var(--gap-norm) 0px var(--gap-norm) var(--gap-norm);
+}
+
+main canvas {
+  background: var(--black-ab);
 }
 
 main iframe {

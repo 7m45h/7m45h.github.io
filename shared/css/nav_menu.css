@@ -24,7 +24,7 @@
   transition: width 500ms;
   width: 0px;
   height: var(--line-width);
-  background: var(--white);
+  background: var(--color-fg);
 }
 
 .nav-menu-index:hover::after {

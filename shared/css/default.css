@@ -6,11 +6,11 @@ body {
   margin: 0px;
   width: 100vw;
   height: 100vh;
-  background: var(--background);
+  background: var(--color-bg);
   font-size: var(--fsize-norm);
   font-family: monospace;
   font-weight: bold;
-  color: var(--white);
+  color: var(--color-fg);
 }
 
 h1, h2, h3, h4, h5, h6 {

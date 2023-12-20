@@ -1,3 +1,17 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-fg: var(--white);
+    --color-bg: var(--black-ab);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-fg: var(--black);
+    --color-bg: var(--white-ab);
+  }
+}
+
 :root {
   --black:      #282c34;
   --red:        #e05252;
@@ -5,7 +19,8 @@
   --yellow:     #ebde6b;
   --blue:       #528bff;
   --white:      #abb2bf;
-  --background: #000000;
+  --black-ab:   #000000;
+  --white-ab:   #ffffff;
 
   --fsize-head: 16px;
   --fsize-norm: 14px;

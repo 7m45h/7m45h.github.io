@@ -1,7 +1,8 @@
-.anc-ext {
-  transition: color 500ms;
+@media (prefers-color-scheme: light) {
+  .anc-ext:hover {
+    background: var(--color-fg);
+  }
 }
-
 .anc-ext:hover {
   color: var(--green);
 }
