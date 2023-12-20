@@ -1,14 +1,14 @@
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-fg: var(--white);
-    --color-bg: var(--black-ab);
-  }
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     --color-fg: var(--black);
     --color-bg: var(--white-ab);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-fg: var(--white);
+    --color-bg: var(--black-ab);
   }
 }
 

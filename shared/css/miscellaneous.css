@@ -1,10 +1,15 @@
 @media (prefers-color-scheme: light) {
   .anc-ext:hover {
     background: var(--color-fg);
+    color: var(--green);
   }
 }
-.anc-ext:hover {
-  color: var(--green);
+
+@media (prefers-color-scheme: dark) {
+  .anc-ext:hover {
+    background: var(--green);
+    color: var(--color-bg);
+  }
 }
 
 .anc-ext::after {
