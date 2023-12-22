@@ -40,12 +40,6 @@ main canvas {
   background: var(--black-ab);
 }
 
-main iframe {
-  border: none;
-  width: 60vw;
-  height: 100%;
-}
-
 main h1, main h2,
 main h3, main h4,
 main h5, main h6,
