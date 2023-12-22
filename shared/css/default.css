@@ -31,3 +31,8 @@ a {
   font-style: italic;
   color: inherit;
 }
+
+::selection {
+  background: var(--color-fg);
+  color: var(--color-bg);
+}
