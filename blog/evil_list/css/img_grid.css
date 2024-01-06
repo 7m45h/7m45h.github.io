@@ -5,8 +5,12 @@ main .main-section {
   justify-content: space-evenly;
 }
 
-figure {
-  width: unset;
-  margin-left: var(--gap-head);
-  margin-right: var(--gap-head);
+main .main-section a {
+  margin: var(--gap-norm);
+}
+
+main .main-section a img {
+  object-fit: scale-down;
+  width: 240px;
+  height: 360px;
 }
