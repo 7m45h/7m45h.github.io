@@ -1,4 +1,7 @@
 #nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   opacity: 1;
   transition: width 500ms 150ms, opacity 500ms;
