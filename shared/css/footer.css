@@ -1,0 +1,18 @@
+footer {
+  grid-row: 13 / 14;
+  grid-column: 2 / 12;
+  border-bottom: var(--border);
+  border-left: var(--border);
+  border-right: var(--border);
+}
+
+#clock {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  border-left: var(--border);
+  padding: 0px var(--fsize-norm);
+  width: max-content;
+  height: 100%;
+  font-size: var(--fsize-head-a);
+}

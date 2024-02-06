@@ -1,3 +1,8 @@
+::selection {
+  background: var(--color-fg);
+  color: var(--color-bg);
+}
+
 .border {
   box-sizing: border-box;
   border-collapse: collapse;
@@ -12,6 +17,7 @@ body {
   height: 100vh;
   background: var(--color-bg);
   font-family: monospace;
+  font-size: var(--fsize-norm);
   color: var(--color-fg);
 }
 
@@ -27,12 +33,4 @@ main {
   grid-row: 3 / 13;
   grid-column: 2 / 12;
   border: var(--border);
-}
-
-footer {
-  grid-row: 13 / 14;
-  grid-column: 2 / 12;
-  border-bottom: var(--border);
-  border-left: var(--border);
-  border-right: var(--border);
 }

@@ -16,5 +16,5 @@
   --fsize-norm: 14px;
   --fsize-head-a: calc(var(--fsize-norm) * 2);
   --fsize-head-b: calc(var(--fsize-norm) * 4);
-  --border: 1px solid var(--color-fg);
+  --border: 2px solid var(--color-fg);
 }
