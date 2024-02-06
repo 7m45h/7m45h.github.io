@@ -21,14 +21,6 @@ body {
   color: var(--color-fg);
 }
 
-nav {
-  grid-row: 2 / 3;
-  grid-column: 2 / 12;
-  border-top: var(--border);
-  border-left: var(--border);
-  border-right: var(--border);
-}
-
 main {
   grid-row: 3 / 13;
   grid-column: 2 / 12;

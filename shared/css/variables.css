@@ -1,0 +1,20 @@
+.theme-dark {
+  --color-fg: #ffffff;
+  --color-bg: #000000;
+}
+
+.theme-light {
+  --color-fg: #000000;
+  --color-bg: #ffffff;
+}
+
+body {
+  --fsize-norm: 14px;
+  --fsize-head-a: calc(var(--fsize-norm) * 2);
+  --fsize-head-b: calc(var(--fsize-norm) * 4);
+
+  --border: 2px solid var(--color-fg);
+
+  transition-property: background, color;
+  transition-duration: 1s;
+}
