@@ -8,7 +8,7 @@ header {
   border-right: var(--border);
 }
 
-#tmp-left-item {
+#home-btn-div {
   display: flex;
   align-items: center;
   border-right: var(--border);
@@ -17,7 +17,7 @@ header {
   aspect-ratio: 1 / 1;
 }
 
-#tli-squre {
+#home-btn {
   width: 100%;
   aspect-ratio: 1 / 1;
   background: var(--color-fg);
@@ -25,7 +25,7 @@ header {
   cursor: pointer;
 }
 
-#tli-squre:hover {
+#home-btn:hover {
   transform: rotate(90deg);
 }
 
