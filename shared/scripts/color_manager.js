@@ -4,7 +4,7 @@ const bodyElement = document.querySelector("body");
 
 let curntTheme = "dark";
 
-function setTheme() {
+function setThemeAuto() {
   if (prefersDark.matches) {
     curntTheme = "dark";
     bodyElement.classList.replace("theme-light", "theme-dark");
@@ -24,4 +24,4 @@ function setThemeManual() {
   }
 }
 
-export { prefersDark, themeSwitch, setTheme, setThemeManual };
+export { prefersDark, themeSwitch, setThemeAuto, setThemeManual };

@@ -1,11 +1,11 @@
 import { setTime } from "./clock.js";
-import { prefersDark, setTheme, setThemeManual, themeSwitch } from "./color_manager.js";
+import { prefersDark, setThemeAuto, setThemeManual, themeSwitch } from "./color_manager.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  setTheme();
+  setThemeAuto();
   setTime();
 
-  prefersDark.addEventListener("change", setTheme);
+  prefersDark.addEventListener("change", setThemeAuto);
   themeSwitch.addEventListener("click", setThemeManual)
   window.setInterval(setTime, 60000);
 });

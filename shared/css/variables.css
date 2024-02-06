@@ -1,14 +1,18 @@
 .theme-dark {
-  --color-fg: #ffffff;
-  --color-bg: #000000;
+  color-scheme: only dark;
 }
 
 .theme-light {
-  --color-fg: #000000;
-  --color-bg: #ffffff;
+  color-scheme: only light;
 }
 
 body {
+  --c-black: #000000;
+  --c-white: #ffffff;
+
+  --color-fg: light-dark(var(--c-black), var(--c-white));
+  --color-bg: light-dark(var(--c-white), var(--c-black));
+
   --fsize-norm: 14px;
   --fsize-head-a: calc(var(--fsize-norm) * 2);
   --fsize-head-b: calc(var(--fsize-norm) * 4);
