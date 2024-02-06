@@ -1,0 +1,38 @@
+.border {
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+body {
+  display: grid;
+  grid-template-rows: var(--fsize-norm) var(--fsize-head-b) repeat(10, 1fr) var(--fsize-head-b) var(--fsize-norm);
+  grid-template-columns: var(--fsize-norm) repeat(10, 1fr) var(--fsize-norm);
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-bg);
+  font-family: monospace;
+  color: var(--color-fg);
+}
+
+nav {
+  grid-row: 2 / 3;
+  grid-column: 2 / 12;
+  border-top: var(--border);
+  border-left: var(--border);
+  border-right: var(--border);
+}
+
+main {
+  grid-row: 3 / 13;
+  grid-column: 2 / 12;
+  border: var(--border);
+}
+
+footer {
+  grid-row: 13 / 14;
+  grid-column: 2 / 12;
+  border-bottom: var(--border);
+  border-left: var(--border);
+  border-right: var(--border);
+}
