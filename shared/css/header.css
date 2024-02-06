@@ -8,7 +8,7 @@ header {
   border-right: var(--border);
 }
 
-#nav-toggle {
+#tmp-left-item {
   display: flex;
   align-items: center;
   border-right: var(--border);
@@ -17,11 +17,16 @@ header {
   aspect-ratio: 1 / 1;
 }
 
-#nav-toggle-btn {
+#tli-squre {
   width: 100%;
   aspect-ratio: 1 / 1;
   background: var(--color-fg);
+  transition: transform 500ms;
   cursor: pointer;
+}
+
+#tli-squre:hover {
+  transform: rotate(90deg);
 }
 
 #page-title {
@@ -37,6 +42,7 @@ header {
 #theme-switch-div {
   display: flex;
   align-items: center;
+  justify-content: center;
   border-left: var(--border);
   padding: 0px var(--fsize-norm);
   height: 100%;
@@ -49,4 +55,8 @@ header {
   aspect-ratio: 1 / 1;
   background: var(--color-fg);
   cursor: pointer;
+}
+
+#theme-switch-btn:active {
+  width: 80%;
 }

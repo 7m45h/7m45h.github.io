@@ -6,6 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setTime();
 
   prefersDark.addEventListener("change", setThemeAuto);
-  themeSwitch.addEventListener("click", setThemeManual)
+  themeSwitch.addEventListener("click", setThemeManual);
   window.setInterval(setTime, 60000);
 });
