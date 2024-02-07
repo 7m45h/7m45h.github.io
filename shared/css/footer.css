@@ -10,7 +10,6 @@ footer {
 
 #repo-link-div {
   display: flex;
-  align-items: center;
   border-right: var(--border);
   padding: 0px var(--fsize-norm);
   height: 100%;
@@ -18,16 +17,9 @@ footer {
 }
 
 #repo-link-btn {
-  width: 100%;
+  margin: auto;
   aspect-ratio: 1 / 1;
-  background: repeating-linear-gradient(
-    0deg,
-    var(--color-fg),
-    var(--color-fg) 4px,
-    var(--color-bg) 4px,
-    var(--color-bg) 6px
-  );
-  cursor: pointer;
+  font-size: var(--fsize-head-a);
 }
 
 #last-mod-date {
