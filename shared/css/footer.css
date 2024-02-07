@@ -1,4 +1,6 @@
 footer {
+  display: flex;
+  justify-content: space-between;
   grid-row: 13 / 14;
   grid-column: 2 / 12;
   border-bottom: var(--border);
@@ -6,10 +8,31 @@ footer {
   border-right: var(--border);
 }
 
+#repo-link-div {
+  display: flex;
+  align-items: center;
+  border-right: var(--border);
+  padding: 0px var(--fsize-norm);
+  height: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+#repo-link-btn {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: repeating-linear-gradient(
+    0deg,
+    var(--color-fg),
+    var(--color-fg) 4px,
+    var(--color-bg) 4px,
+    var(--color-bg) 6px
+  );
+  cursor: pointer;
+}
+
 #last-mod-date {
   display: flex;
   align-items: center;
-  margin-left: auto;
   border-left: var(--border);
   padding: 0px var(--fsize-norm);
   width: max-content;
