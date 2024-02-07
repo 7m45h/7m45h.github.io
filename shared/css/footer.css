@@ -6,7 +6,7 @@ footer {
   border-right: var(--border);
 }
 
-#clock {
+#last-mod-date {
   display: flex;
   align-items: center;
   margin-left: auto;
