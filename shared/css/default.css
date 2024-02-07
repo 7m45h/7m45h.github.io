@@ -8,6 +8,15 @@
   border-collapse: collapse;
 }
 
+.bar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px var(--fsize-norm);
+  height: 100%;
+  font-size: var(--fsize-head-a);
+}
+
 body {
   display: grid;
   grid-template-rows: var(--fsize-norm) var(--fsize-head-b) repeat(10, 1fr) var(--fsize-head-b) var(--fsize-norm);

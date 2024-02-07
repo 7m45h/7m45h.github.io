@@ -9,11 +9,7 @@ header {
 }
 
 #home-btn-div {
-  display: flex;
-  align-items: center;
   border-right: var(--border);
-  padding: 0px var(--fsize-norm);
-  height: 100%;
   aspect-ratio: 1 / 1;
 }
 
@@ -30,22 +26,12 @@ header {
 }
 
 #page-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  height: 100%;
-  font-size: var(--fsize-head-a);
   font-weight: bold;
 }
 
 #theme-switch-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-left: var(--border);
-  padding: 0px var(--fsize-norm);
-  height: 100%;
   aspect-ratio: 1 / 1;
 }
 

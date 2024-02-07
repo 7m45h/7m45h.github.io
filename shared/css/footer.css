@@ -9,25 +9,10 @@ footer {
 }
 
 #repo-link-div {
-  display: flex;
   border-right: var(--border);
-  padding: 0px var(--fsize-norm);
-  height: 100%;
   aspect-ratio: 1 / 1;
-}
-
-#repo-link-btn {
-  margin: auto;
-  aspect-ratio: 1 / 1;
-  font-size: var(--fsize-head-a);
 }
 
 #last-mod-date {
-  display: flex;
-  align-items: center;
   border-left: var(--border);
-  padding: 0px var(--fsize-norm);
-  width: max-content;
-  height: 100%;
-  font-size: var(--fsize-head-a);
 }
