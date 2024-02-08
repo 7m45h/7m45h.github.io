@@ -1,22 +1,3 @@
-::selection {
-  background: var(--color-fg);
-  color: var(--color-bg);
-}
-
-.border {
-  box-sizing: border-box;
-  border-collapse: collapse;
-}
-
-.bar-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0px var(--fsize-norm);
-  height: 100%;
-  font-size: var(--fsize-head-a);
-}
-
 body {
   display: grid;
   grid-template-rows: var(--fsize-norm) var(--fsize-head-b) repeat(10, 1fr) var(--fsize-head-b) var(--fsize-norm);
@@ -43,4 +24,38 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: inherit;
   text-decoration-thickness: 2px;
+}
+
+.border {
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+.bar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px var(--fsize-norm);
+  height: 100%;
+  font-size: var(--fsize-norm);
+  font-weight: bold;
+}
+
+.a-ext {
+  text-decoration: none;
+  white-space: break-spaces;
+}
+
+.a-ext::after {
+  content: ' ↗';
+}
+
+.a-ext:hover::after {
+  content: '    ';
+  animation: dial 1s infinite;
+}
+
+::selection {
+  background: var(--color-fg);
+  color: var(--color-bg);
 }

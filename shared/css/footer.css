@@ -8,9 +8,8 @@ footer {
   border-right: var(--border);
 }
 
-#repo-link-div {
+#repo-link {
   border-right: var(--border);
-  aspect-ratio: 1 / 1;
 }
 
 #last-mod-date {

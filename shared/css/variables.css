@@ -1,9 +1,19 @@
-.theme-dark {
-  color-scheme: only dark;
-}
+@keyframes dial {
+  0% {
+    content: '    ';
+  }
 
-.theme-light {
-  color-scheme: only light;
+  25% {
+    content: ' .  ';
+  }
+
+  50% {
+    content: ' .. ';
+  }
+
+  75% {
+    content: ' ...';
+  }
 }
 
 body {
@@ -21,4 +31,12 @@ body {
 
   transition-property: background, color;
   transition-duration: 1s;
+}
+
+.theme-dark {
+  color-scheme: only dark;
+}
+
+.theme-light {
+  color-scheme: only light;
 }
