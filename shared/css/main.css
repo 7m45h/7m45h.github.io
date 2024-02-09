@@ -2,7 +2,7 @@ main {
   scroll-behavior: smooth;
   overflow-y: hidden;
 
-  .main-section {
+  & section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
