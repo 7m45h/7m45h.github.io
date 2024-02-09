@@ -29,12 +29,10 @@ header {
 }
 
 #theme-switch-btn {
+  appearance: none;
+  margin: 0px;
   border-radius: 50%;
   width: 100%;
   background: var(--color-fg);
   cursor: pointer;
-
-  &:active {
-    width: 80%;
-  }
 }

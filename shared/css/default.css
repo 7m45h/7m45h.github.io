@@ -2,6 +2,8 @@ body {
   display: grid;
   grid-template-rows: var(--fsize-norm) var(--fsize-head-b) repeat(10, 1fr) var(--fsize-head-b) var(--fsize-norm);
   grid-template-columns: var(--fsize-norm) repeat(10, 1fr) var(--fsize-norm);
+  transition-property: background, color;
+  transition-duration: 1s;
   margin: 0px;
   width: 100vw;
   height: 100vh;

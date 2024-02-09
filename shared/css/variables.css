@@ -16,7 +16,23 @@
   }
 }
 
-body {
+:root {
+  @media (prefers-color-scheme: light) {
+    color-scheme: only light;
+
+    &:has(#theme-switch-btn:checked) {
+      color-scheme: only dark;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: only dark;
+
+    &:has(#theme-switch-btn:checked) {
+      color-scheme: only light;
+    }
+  }
+
   --c-black: #000000;
   --c-white: #ffffff;
 
@@ -28,15 +44,4 @@ body {
   --fsize-head-b: calc(var(--fsize-norm) * 4);
 
   --border: 2px solid var(--color-fg);
-
-  transition-property: background, color;
-  transition-duration: 1s;
-}
-
-.theme-dark {
-  color-scheme: only dark;
-}
-
-.theme-light {
-  color-scheme: only light;
 }
