@@ -41,18 +41,22 @@ a {
   font-weight: bold;
 }
 
+.square {
+  aspect-ratio: 1 / 1;
+}
+
 .a-ext {
   text-decoration: none;
   white-space: break-spaces;
-}
 
-.a-ext::after {
-  content: ' ↗';
-}
+  &::after {
+    content: ' ↗';
+  }
 
-.a-ext:hover::after {
-  content: '    ';
-  animation: dial 1s infinite;
+  &:hover::after {
+    content: '    ';
+    animation: dial 1s infinite;
+  }
 }
 
 ::selection {

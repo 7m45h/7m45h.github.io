@@ -1,7 +1,3 @@
-#nav-bar {
-  border-right: var(--border);
-}
-
 .nav-bar-item {
   margin: 0px var(--fsize-norm);
 }

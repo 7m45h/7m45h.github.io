@@ -6,12 +6,12 @@ footer {
   border-bottom: var(--border);
   border-left: var(--border);
   border-right: var(--border);
-}
 
-#repo-link {
-  border-right: var(--border);
-}
+  & > :not(:last-child) {
+    border-right: var(--border);
+  }
 
-#last-mod-date {
-  border-left: var(--border);
+  & > :last-child {
+    border-left: var(--border);
+  }
 }

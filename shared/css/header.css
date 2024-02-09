@@ -6,23 +6,21 @@ header {
   border-top: var(--border);
   border-left: var(--border);
   border-right: var(--border);
-}
 
-#home-btn-div {
-  border-right: var(--border);
-  aspect-ratio: 1 / 1;
+  & > :not(:last-child) {
+    border-right: var(--border);
+  }
 }
 
 #home-btn {
   width: 100%;
-  aspect-ratio: 1 / 1;
   background: var(--color-fg);
   transition: transform 500ms;
   cursor: pointer;
-}
 
-#home-btn:hover {
-  transform: rotate(90deg);
+  &:hover {
+    transform: rotate(90deg);
+  }
 }
 
 #page-title {
@@ -30,19 +28,13 @@ header {
   font-weight: bold;
 }
 
-#theme-switch-div {
-  border-left: var(--border);
-  aspect-ratio: 1 / 1;
-}
-
 #theme-switch-btn {
   border-radius: 50%;
   width: 100%;
-  aspect-ratio: 1 / 1;
   background: var(--color-fg);
   cursor: pointer;
-}
 
-#theme-switch-btn:active {
-  width: 80%;
+  &:active {
+    width: 80%;
+  }
 }
