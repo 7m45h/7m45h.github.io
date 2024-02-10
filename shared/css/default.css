@@ -43,6 +43,10 @@ a {
   font-weight: bold;
 }
 
+.spacer {
+  flex-grow: 1;
+}
+
 .square {
   aspect-ratio: 1 / 1;
 }
@@ -52,7 +56,7 @@ a {
   white-space: break-spaces;
 
   &::after {
-    content: ' ↗';
+    content: ' ↗  ';
   }
 
   &:hover::after {

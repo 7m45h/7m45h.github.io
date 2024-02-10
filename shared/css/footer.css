@@ -11,7 +11,9 @@ footer {
     border-right: var(--border);
   }
 
-  & > :last-child {
-    border-left: var(--border);
+  #powerd-by {
+    & > a {
+      margin: 0px var(--fsize-norm);
+    }
   }
 }
