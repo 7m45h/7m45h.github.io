@@ -19,13 +19,27 @@ main {
   border: var(--border);
 }
 
-h1, h2, h3, h4, h5, h6 {
+:where(h1, h2, h3, h4, h5, h6) {
   margin: 0px;
 }
 
 a {
   color: inherit;
   text-decoration-thickness: 2px;
+
+  &[target="_blank"]:not(:has(img)) {
+    text-decoration: none;
+    white-space: break-spaces;
+
+    &::after {
+      content: ' ↗  ';
+    }
+
+    &:hover::after {
+      content: '    ';
+      animation: dial 1s infinite;
+    }
+  }
 }
 
 .border {
@@ -49,20 +63,6 @@ a {
 
 .square {
   aspect-ratio: 1 / 1;
-}
-
-.a-ext {
-  text-decoration: none;
-  white-space: break-spaces;
-
-  &::after {
-    content: ' ↗  ';
-  }
-
-  &:hover::after {
-    content: '    ';
-    animation: dial 1s infinite;
-  }
 }
 
 ::selection {
