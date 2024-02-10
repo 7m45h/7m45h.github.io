@@ -1,7 +1,5 @@
 .m-poster {
   margin: var(--fsize-head-a);
-  width: fit-content;
-  height: fit-content;
 
   & > img {
     transition-property: transform, filter;

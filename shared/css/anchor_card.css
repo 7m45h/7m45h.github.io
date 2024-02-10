@@ -1,0 +1,25 @@
+.anchor-card {
+  transition-property: background-size;
+  transition-duration: 1s;
+  border: var(--border);
+  padding: var(--fsize-norm);
+  margin: var(--fsize-head-a);
+  background-image: linear-gradient(var(--color-fg) 0px 100%);
+  background-repeat: no-repeat;
+  background-size: 0px 100%;
+  text-decoration: none;
+
+  &:hover {
+    background-size: 100% 100%;
+  }
+
+  & span {
+    color: light-dark(var(--color-bg), var(--color-fg));
+    font-size: var(--fsize-head-b);
+    mix-blend-mode: difference;
+
+    &::before {
+      content: '# ';
+    }
+  }
+}

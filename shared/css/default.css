@@ -5,8 +5,8 @@ body {
   transition-property: background, color;
   transition-duration: 1s;
   margin: 0px;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   background: var(--color-bg);
   font-family: monospace;
   font-size: var(--fsize-norm);
@@ -55,14 +55,18 @@ a {
   height: 100%;
   font-size: var(--fsize-norm);
   font-weight: bold;
-}
 
-.spacer {
-  flex-grow: 1;
+  .bar-item-item {
+    margin: 0px var(--fsize-norm);
+  }
 }
 
 .square {
   aspect-ratio: 1 / 1;
+}
+
+.spacer {
+  flex-grow: 1;
 }
 
 ::selection {

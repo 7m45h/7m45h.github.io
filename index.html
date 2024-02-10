@@ -10,10 +10,9 @@
     <link rel="icon" type="image/png" href="/shared/images/favicon_dark.png">
     <link rel="stylesheet" type="text/css" href="/shared/css/variables.css">
     <link rel="stylesheet" type="text/css" href="/shared/css/default.css">
-    <link rel="stylesheet" type="text/css" href="/shared/css/navbar.css">
     <link rel="stylesheet" type="text/css" href="/shared/css/header.css">
     <link rel="stylesheet" type="text/css" href="/shared/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/shared/css/card_deck.css">
+    <link rel="stylesheet" type="text/css" href="/shared/css/anchor_card.css">
     <link rel="stylesheet" type="text/css" href="/shared/css/footer.css">
   </head>
   <body>
@@ -22,10 +21,10 @@
         <a id="home-btn" class="square" href="/"></a>
       </div>
       <nav id="nav-bar" class="border bar-item">
-        <a href="/#blog" class="nav-bar-item">blog</a>
-        <a href="/#canv" class="nav-bar-item">canv</a>
-        <a href="/#etc" class="nav-bar-item">etc</a>
-        <a href="/#about" class="nav-bar-item">about</a>
+        <a href="/#blog" class="bar-item-item">blog</a>
+        <a href="/#canv" class="bar-item-item">canv</a>
+        <a href="/#etc" class="bar-item-item">etc</a>
+        <a href="/#about" class="bar-item-item">about</a>
       </nav>
       <h1 id="page-title" class="border bar-item spacer">home</h1>
       <div class="border bar-item square">
@@ -34,12 +33,10 @@
     </header>
     <main class="border">
       <section id="blog">
-        <div class="page-card-deck">
-          <a class="border page-card" href="/"><span>essay_on_subnautica</span></a>
-          <a class="border page-card" href="/blog/evil_list"><span>evil_list</span></a>
-          <a class="border page-card" href="/"><span>foss_v_proprietary</span></a>
-          <a class="border page-card" href="/"><span>scary_library</span></a>
-        </div>
+        <a class="border anchor-card" href="/"><span>essay_on_subnautica</span></a>
+        <a class="border anchor-card" href="/blog/evil_list"><span>evil_list</span></a>
+        <a class="border anchor-card" href="/"><span>foss_v_proprietary</span></a>
+        <a class="border anchor-card" href="/"><span>scary_library</span></a>
       </section>
       <section id="canv"></section>
       <section id="etc"></section>
@@ -48,7 +45,7 @@
     <footer class="border">
       <a id="repo-link" class="border bar-item" href="https://github.com/7m45h/7m45h.github.io" target="_blank">src</a>
       <div id="powerd-by" class="border bar-item">
-        <a href="https://pages.github.com/" target="_blank">github pages</a>
+        <a class="bar-item-item" href="https://pages.github.com/" target="_blank">github pages</a>
       </div>
       <div class="border bar-item spacer"></div>
       <div id="last-mod-date" class="border bar-item">2024-02-07</div>

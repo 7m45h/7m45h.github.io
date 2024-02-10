@@ -1,6 +1,5 @@
 footer {
   display: flex;
-  justify-content: space-between;
   grid-row: 13 / 14;
   grid-column: 2 / 12;
   border-bottom: var(--border);
@@ -9,11 +8,5 @@ footer {
 
   & > :not(:last-child) {
     border-right: var(--border);
-  }
-
-  #powerd-by {
-    & > a {
-      margin: 0px var(--fsize-norm);
-    }
   }
 }
