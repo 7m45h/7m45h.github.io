@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ site.Title }}: {{ .Title }}</title>
+<meta name="author" content="{{ site.Params.author }}">
+<meta name="description" content="{{ .Description }}">
+{{ with .Params.tags }}
+  {{ $keywords := collections.Delimit . ", " }}
+  <meta name="keywords" content="{{ $keywords }}">
+{{ end }}
+{{ with resources.Get "images/favicon_dark.png" }}
+  <link rel="icon" type="image/png" href="{{ .Permalink }}">
+{{ end}}
+{{ with resources.Match "css/*.css" | resources.Concat "css/main.css" | resources.Minify }}
+  <link rel="stylesheet" type="text/css" href="{{ .Permalink }}">
+{{ end }}
+{{ with .Resources.Match "css/*.css" }}
+  {{ $mincsspath := printf "css/%s/styles.css" page.RelPermalink }}
+  {{ $mincss := resources.Concat $mincsspath . | resources.Minify }}
+  <link rel="stylesheet" type="text/css" href="{{ $mincss.Permalink }}">
+{{ end }}
