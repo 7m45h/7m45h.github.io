@@ -17,19 +17,15 @@
 }
 
 :root {
-  @media (prefers-color-scheme: light) {
-    color-scheme: only light;
-
+  @media (prefers-color-scheme: dark) {
     &:has(#theme-switch-btn:checked) {
-      color-scheme: only dark;
+      color-scheme: only light;
     }
   }
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: only dark;
-
+  @media (prefers-color-scheme: light) {
     &:has(#theme-switch-btn:checked) {
-      color-scheme: only light;
+      color-scheme: only dark;
     }
   }
 
