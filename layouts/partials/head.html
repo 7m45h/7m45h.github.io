@@ -8,8 +8,12 @@
   <meta name="keywords" content="{{ $keywords }}">
 {{ end }}
 <meta name="color-scheme" content="dark light">
+{{ with resources.Get "images/favicon_light.png" }}
+  <link rel="icon" type="image/png" href="{{ .Permalink }}" media="(prefers-color-scheme: light)">
+{{ end}}
 {{ with resources.Get "images/favicon_dark.png" }}
-  <link rel="icon" type="image/png" href="{{ .Permalink }}">
+  <link rel="icon" type="image/png" href="{{ .Permalink }}" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" href="{{ .Permalink }}" media="(prefers-color-scheme: no-preference)">
 {{ end}}
 {{ with resources.Match "css/*.css" | resources.Concat "css/main.css" | resources.Minify }}
   <link rel="stylesheet" type="text/css" href="{{ .Permalink }}">
