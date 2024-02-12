@@ -1,0 +1,21 @@
+figure {
+  border: var(--border);
+  padding: var(--fsize-norm);
+
+  & img {
+    display: block;
+    margin: 0px auto;
+    border: var(--border);
+    border-radius: var(--fsize-norm);
+    height: 50dvh;
+  }
+
+  & figcaption {
+    margin: var(--fsize-norm) auto 0px auto;
+    width: fit-content;
+
+    & a::before {
+      content: '©';
+    }
+  }
+}

@@ -10,6 +10,7 @@ body {
   background: var(--color-bg);
   font-family: monospace;
   font-size: var(--fsize-norm);
+  font-weight: bold;
   color: var(--color-fg);
 }
 
@@ -54,7 +55,6 @@ a {
   padding: 0px var(--fsize-norm);
   height: 100%;
   font-size: var(--fsize-norm);
-  font-weight: bold;
 
   .bar-item-item {
     margin: 0px var(--fsize-norm);

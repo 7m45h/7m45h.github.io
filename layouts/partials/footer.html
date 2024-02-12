@@ -3,6 +3,9 @@
   <div id="powerd-by" class="border bar-item">
     <a class="bar-item-item" href="https://gohugo.io/" target="_blank">hugo</a>
     <a class="bar-item-item" href="https://pages.github.com/" target="_blank">github pages</a>
+    {{ if .HasShortcode "rand_img" }}
+      <a class="bar-item-item" href="https://picsum.photos/" target="_blank">picsum.photos</a>
+    {{ end }}
     {{ with .Params.powerdby }}
       {{ range . }}
         <a class="bar-item-item" href="{{ .link }}" target="_blank">{{ .name }}</a>
