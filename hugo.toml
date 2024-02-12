@@ -12,6 +12,7 @@ titleCaseStyle = "none"
 
 [params]
 author = "tmash"
+repo = "https://github.com/7m45h/7m45h.github.io"
 
 [minify]
 minifyOutput = true
@@ -21,8 +22,6 @@ keepCSS2 = false
 
 [minify.tdewolff.html]
 keepDefaultAttrVals = false
-keepDocumentTags = false
-keepEndTags = false
 keepSpecialComments = false
 
 [sitemap]

@@ -1,0 +1,8 @@
+{{ range site.Sections }}
+  <a href="{{ .Permalink }}" class="bar-item-item">{{ .LinkTitle }}</a>
+{{ end }}
+{{ if .IsHome }}
+  {{ range .RegularPages }}
+    <a href="{{ .Permalink }}" class="bar-item-item">{{ .LinkTitle }}</a>
+  {{ end }}
+{{ end }}

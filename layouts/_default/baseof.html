@@ -6,10 +6,8 @@
   <body>
     {{ partial "header.html" . }}
     <main class="border">
-      <section>
-        {{ block "main" . }}
-        {{ end }}
-      </section>
+      {{ block "main" . }}
+      {{ end }}
     </main>
     {{ partial "footer.html" . }}
   </body>

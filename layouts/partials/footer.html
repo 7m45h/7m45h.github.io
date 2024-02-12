@@ -1,5 +1,5 @@
 <footer class="border">
-  <a id="repo-link" class="border bar-item" href="{{ .Params.repo }}" target="_blank">src</a>
+  <a id="repo-link" class="border bar-item" href="{{ if .Params.repo }} {{ .Params.repo }} {{ else }} {{ site.Params.repo }} {{ end }}" target="_blank">src</a>
   <div id="powerd-by" class="border bar-item">
     <a class="bar-item-item" href="https://gohugo.io/" target="_blank">hugo</a>
     <a class="bar-item-item" href="https://pages.github.com/" target="_blank">github pages</a>

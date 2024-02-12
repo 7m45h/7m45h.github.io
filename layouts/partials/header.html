@@ -3,11 +3,9 @@
     <a id="home-btn" class="square" href="/"></a>
   </div>
   <nav id="nav-bar" class="border bar-item">
-    {{ range site.Sections }}
-      <a href="{{ .Permalink }}" class="bar-item-item">{{ .LinkTitle }}</a>
-    {{ end }}
+    {{ partial "nav_lister.html" . }}
   </nav>
-  <h1 id="page-title" class="border bar-item spacer">{{ .Title }}</h1>
+  <h1 id="page-title" class="border bar-item spacer">{{ if .IsHome }} home {{ else }} {{ .Title }} {{ end }}</h1>
   <div class="border bar-item square">
     <input id="theme-switch-btn" class="square" type="checkbox">
   </div>
