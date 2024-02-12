@@ -2,8 +2,8 @@
 title = 'evil list'
 description = "list of movies i enjoyed watching"
 tags = ["7m45h", "movies", "list"]
-date = 2024-02-11T16:21:09+05:30
-draft = true
+date = 2024-02-11
+draft = false
 [[powerdby]]
 name = "impawards"
 link = "http://www.impawards.com/"

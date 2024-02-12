@@ -27,7 +27,7 @@ a {
   color: inherit;
   text-decoration-thickness: 2px;
 
-  &[target="_blank"]:not(:has(img)) {
+  &[target="_blank"]:not(:has(img, span)) {
     text-decoration: none;
     white-space: break-spaces;
 
