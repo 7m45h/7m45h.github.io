@@ -1,7 +1,6 @@
 baseURL = "https://7m45h.github.io/"
 languageCode = "en-us"
 title = "7m45h"
-canonifyURLs = true
 cleanDestinationDir = true
 disableKinds = ["rss", "taxonomy", "term"]
 enableGitInfo = true

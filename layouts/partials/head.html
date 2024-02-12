@@ -9,17 +9,17 @@
 {{ end }}
 <meta name="color-scheme" content="dark light">
 {{ with resources.Get "images/favicon_light.png" }}
-  <link rel="icon" type="image/png" href="{{ .Permalink }}" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/png" href="{{ .RelPermalink }}" media="(prefers-color-scheme: light)">
 {{ end}}
 {{ with resources.Get "images/favicon_dark.png" }}
-  <link rel="icon" type="image/png" href="{{ .Permalink }}" media="(prefers-color-scheme: dark)">
-  <link rel="icon" type="image/png" href="{{ .Permalink }}" media="(prefers-color-scheme: no-preference)">
+  <link rel="icon" type="image/png" href="{{ .RelPermalink }}" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" href="{{ .RelPermalink }}" media="(prefers-color-scheme: no-preference)">
 {{ end}}
 {{ with resources.Match "css/*.css" | resources.Concat "css/main.css" | resources.Minify }}
-  <link rel="stylesheet" type="text/css" href="{{ .Permalink }}">
+  <link rel="stylesheet" type="text/css" href="{{ .RelPermalink }}">
 {{ end }}
 {{ with .Resources.Match "css/*.css" }}
   {{ $mincsspath := printf "css/%s/styles.css" page.RelPermalink }}
   {{ $mincss := resources.Concat $mincsspath . | resources.Minify }}
-  <link rel="stylesheet" type="text/css" href="{{ $mincss.Permalink }}">
+  <link rel="stylesheet" type="text/css" href="{{ $mincss.RelPermalink }}">
 {{ end }}

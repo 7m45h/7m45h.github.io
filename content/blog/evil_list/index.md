@@ -21,7 +21,7 @@ link = "https://github.com/7m45h/evil_manager"
     {{ $poster := printf "images/%s.*" .imdb }}
     <a class="m-poster" href="https://www.imdb.com/title/{{ .imdb }}/" title="{{ $title }}" target="_blank">
       {{ with page.Resources.GetMatch $poster }}
-        <img src="{{ .Permalink }}" alt="{{ $title }}" loading="lazy">
+        <img src="{{ .RelPermalink }}" alt="{{ $title }}" loading="lazy">
       {{ end }}
     </a>
   {{ end }}
