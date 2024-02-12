@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  grid-row: 2 / 3;
+  grid-column: 2 / 12;
+  border-top: var(--border);
+  border-left: var(--border);
+  border-right: var(--border);
+
+  & > :not(:last-child) {
+    border-right: var(--border);
+  }
+}
+
+#home-btn {
+  width: 100%;
+  background: var(--color-fg);
+  transition: transform 500ms;
+  cursor: pointer;
+
+  &:hover {
+    transform: rotate(90deg);
+  }
+}
+
+#theme-switch-btn {
+  appearance: none;
+  margin: 0px;
+  border-radius: 50%;
+  width: 100%;
+  background: var(--color-fg);
+  cursor: pointer;
+}

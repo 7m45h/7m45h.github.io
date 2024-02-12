@@ -1,0 +1,30 @@
+baseURL = "https://7m45h.github.io/"
+languageCode = "en-us"
+title = "7m45h"
+cleanDestinationDir = true
+disableKinds = ["rss", "taxonomy", "term"]
+enableGitInfo = true
+enableRobotsTXT = true
+pluralizeListTitles = false
+timeZone = "UTC"
+titleCaseStyle = "none"
+
+[params]
+author = "tmash"
+repo = "https://github.com/7m45h/7m45h.github.io"
+
+[minify]
+minifyOutput = true
+
+[minify.tdewolff.css]
+keepCSS2 = false
+
+[minify.tdewolff.html]
+keepDefaultAttrVals = false
+keepSpecialComments = false
+
+[sitemap]
+changeFreq = "weekly"
+
+[security]
+enableInlineShortcodes = true

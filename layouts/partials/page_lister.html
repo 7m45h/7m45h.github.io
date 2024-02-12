@@ -1,0 +1,3 @@
+{{ range .Pages }}
+  {{ partial "anchor_card.html" (dict "url" .RelPermalink "name" .LinkTitle "ext" false) }}
+{{ end }}
