@@ -1,8 +1,12 @@
-{{ range site.Sections }}
-  <a href="{{ .RelPermalink }}" class="bar-item-item">{{ .LinkTitle }}</a>
-{{ end }}
 {{ if .IsHome }}
+  {{ range site.Sections }}
+    <a href="#{{ .Title }}" class="bar-item-item">{{ .Title }}</a>
+  {{ end }}
   {{ range .RegularPages }}
-    <a href="{{ .RelPermalink }}" class="bar-item-item">{{ .LinkTitle }}</a>
+    <a href="{{ .RelPermalink }}" class="bar-item-item">{{ .Title }}</a>
+  {{ end }}
+{{ else }}
+  {{ range site.Sections }}
+    <a href="{{ .RelPermalink }}" class="bar-item-item">{{ .Title }}</a>
   {{ end }}
 {{ end }}
