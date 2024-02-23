@@ -207,6 +207,10 @@ imdb = "tt0180093"
 name = "Requiem for a Dream"
 year = "2000"
 [[movies]]
+imdb = "tt0093870"
+name = "RoboCop"
+year = "1987"
+[[movies]]
 imdb = "tt0086250"
 name = "Scarface"
 year = "1983"
@@ -294,6 +298,10 @@ year = "2013"
 imdb = "tt0469494"
 name = "There Will Be Blood"
 year = "2007"
+[[movies]]
+imdb = "tt0100802"
+name = "Total Recall"
+year = "1990"
 [[movies]]
 imdb = "tt0114709"
 name = "Toy Story"
