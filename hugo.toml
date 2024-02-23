@@ -6,6 +6,7 @@ disableKinds = ["rss", "taxonomy", "term"]
 enableGitInfo = true
 enableRobotsTXT = true
 pluralizeListTitles = false
+timeout = "60"
 timeZone = "UTC"
 titleCaseStyle = "none"
 
