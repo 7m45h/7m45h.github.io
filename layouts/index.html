@@ -1,6 +1,6 @@
 {{ define "main" }}
   {{ range site.Sections }}
-    <section id="{{ .LinkTitle }}">
+    <section id="{{ .Title }}">
       {{ partial "page_lister.html" . }}
     </section>
   {{ end }}

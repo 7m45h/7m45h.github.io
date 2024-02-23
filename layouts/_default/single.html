@@ -1,5 +1,11 @@
 {{ define "main" }}
   <section>
-    {{ .Content }}
+    {{ with .Site.GetPage "/canv" }}
+      {{ if $.InSection . }}
+        <canvas></canvas>
+      {{ else }}
+        {{ $.Content }}
+      {{ end }}
+    {{ end }}
   </section>
 {{ end }}

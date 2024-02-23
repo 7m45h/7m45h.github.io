@@ -23,3 +23,12 @@
   {{ $mincss := resources.Concat $mincsspath . | resources.Minify }}
   <link rel="stylesheet" type="text/css" href="{{ $mincss.RelPermalink }}">
 {{ end }}
+{{ with .Site.GetPage "/canv" }}
+  {{ if $.InSection . }}
+    {{ with $.Resources.Match "scripts/*.js" }}
+      {{ $minjspath := printf "scripts/%s/main.js" page.RelPermalink }}
+      {{ $minjs := resources.Concat $minjspath . | resources.Minify }}
+      <script src="{{ $minjs.RelPermalink }}" defer></script>
+    {{ end }}
+  {{ end }}
+{{ end }}
