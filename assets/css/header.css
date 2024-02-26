@@ -28,4 +28,8 @@ header {
   width: 100%;
   background: var(--color-fg);
   cursor: pointer;
+
+  & :active {
+    scale: 0.8;
+  }
 }
