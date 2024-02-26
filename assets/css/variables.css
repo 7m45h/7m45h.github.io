@@ -17,18 +17,6 @@
 }
 
 :root {
-  @media (prefers-color-scheme: dark) {
-    &:has(#theme-switch-btn:checked) {
-      color-scheme: only light;
-    }
-  }
-
-  @media (prefers-color-scheme: light) {
-    &:has(#theme-switch-btn:checked) {
-      color-scheme: only dark;
-    }
-  }
-
   --c-black: #000000;
   --c-white: #ffffff;
 

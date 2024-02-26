@@ -23,6 +23,9 @@
   {{ $mincss := resources.Concat $mincsspath . | resources.Minify }}
   <link rel="stylesheet" type="text/css" href="{{ $mincss.RelPermalink }}">
 {{ end }}
+{{ with resources.Get "scripts/theme_manager.js" | resources.Minify }}
+  <script src="{{ .RelPermalink }}" defer></script>
+{{ end }}
 {{ with .Site.GetPage "/canv" }}
   {{ if $.InSection . }}
     {{ with $.Resources.Match "scripts/*.js" }}

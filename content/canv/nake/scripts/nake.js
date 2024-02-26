@@ -2,10 +2,10 @@ const div_main = document.querySelector("main");
 const canv     = document.querySelector("canvas");
 const ctx      = canv.getContext("2d");
 
-const cell_size = 10;
+const cell_size = 16;
 const half_cell = cell_size * 0.5;
 const two_PI    = Math.PI * 2;
-const fps       = 1000 / 10;
+const fps       = 1000 / 24;
 
 let time_prev    = 0;
 let time_delta   = 0;
@@ -104,10 +104,8 @@ function update_canv_size()
   canv.width = div_main.clientWidth;
   canv.height = div_main.clientHeight;
 
-  ctx.fillStyle = "#ffffff";
   ctx.font = "20px monospace";
   ctx.lineWidth = 2;
-  ctx.strokeStyle = "#ffffff";
 }
 
 function update()
@@ -126,6 +124,9 @@ function update()
 
 function render()
 {
+  ctx.fillStyle = color_fg   // color_* ? from theme_manager.js
+  ctx.strokeStyle = color_fg // color_* ? from theme_manager.js
+
   ctx.clearRect(0, 0, canv.width, canv.height);
   apple.render();
   nake.render();
