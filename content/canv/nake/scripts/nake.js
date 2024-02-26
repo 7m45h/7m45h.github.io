@@ -17,6 +17,11 @@ class Nake
 {
   static speed = cell_size;
 
+  static prevX = 0;
+  static prevY = 0;
+  static crntX = 0;
+  static crntY = 0;
+
   constructor()
   {
     this.x = canv.width * 0.5;
@@ -26,6 +31,9 @@ class Nake
 
   update()
   {
+    Nake.prevX = this.x;
+    Nake.prevY = this.y;
+
     switch (crnt_key)
     {
       case "ArrowLeft":
@@ -42,6 +50,18 @@ class Nake
       break;
     }
 
+    for (let i = 0, l = this.tail.length; i < l; i++)
+    {
+      Nake.crntX = this.tail[i][0];
+      Nake.crntY = this.tail[i][1];
+
+      this.tail[i][0] = Nake.prevX;
+      this.tail[i][1] = Nake.prevY;
+
+      Nake.prevX = Nake.crntX;
+      Nake.prevY = Nake.crntY;
+    }
+
     this.x = (this.x + canv.width) % canv.width;
     this.y = (this.y + canv.height) % canv.height;
   }
@@ -49,8 +69,9 @@ class Nake
   render()
   {
     ctx.strokeRect(this.x - half_cell, this.y - half_cell, cell_size, cell_size);
-    for (let i = 0, l = this.tail.length; i < l; i++) {
-      ctx.strokeRect(this.tail[i][0], this.tail[i][1], cell_size, cell_size);
+    for (let i = 0, l = this.tail.length; i < l; i++)
+    {
+      ctx.strokeRect(this.tail[i][0] - half_cell, this.tail[i][1] - half_cell, cell_size, cell_size);
     }
   }
 }
@@ -83,8 +104,10 @@ function update_canv_size()
   canv.width = div_main.clientWidth;
   canv.height = div_main.clientHeight;
 
-  ctx.strokeStyle = "#ffffff";
+  ctx.fillStyle = "#ffffff";
+  ctx.font = "20px monospace";
   ctx.lineWidth = 2;
+  ctx.strokeStyle = "#ffffff";
 }
 
 function update()
@@ -97,6 +120,7 @@ function update()
     nake.y + half_cell < apple.y - half_cell
   )) {
     apple.respawn();
+    nake.tail.push([nake.x, nake.y]);
   }
 }
 
@@ -105,6 +129,7 @@ function render()
   ctx.clearRect(0, 0, canv.width, canv.height);
   apple.render();
   nake.render();
+  ctx.fillText(`score: ${nake.tail.length}`, canv.width - 150, canv.height - 30);
 }
 
 function main(time)
@@ -124,7 +149,11 @@ function main(time)
 }
 
 update_canv_size();
-window.addEventListener("resize", update_canv_size);
+window.addEventListener("resize", () => {
+  update_canv_size();
+  apple.respawn();
+});
+
 window.addEventListener("keydown", (event) => {
   switch (event.key)
   {
