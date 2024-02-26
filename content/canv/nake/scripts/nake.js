@@ -41,14 +41,40 @@ class Nake
       this.y += Nake.speed;
       break;
     }
+
+    this.x = (this.x + canv.width) % canv.width;
+    this.y = (this.y + canv.height) % canv.height;
   }
 
   render()
   {
-    ctx.strokeRect(this.x, this.y, cell_size, cell_size);
+    ctx.strokeRect(this.x - half_cell, this.y - half_cell, cell_size, cell_size);
     for (let i = 0, l = this.tail.length; i < l; i++) {
       ctx.strokeRect(this.tail[i][0], this.tail[i][1], cell_size, cell_size);
     }
+  }
+}
+
+class Apple
+{
+  constructor()
+  {
+    this.x = canv.width * Math.random();
+    this.y = canv.height * Math.random();
+  }
+
+  respawn()
+  {
+    this.x = canv.width * Math.random();
+    this.y = canv.height * Math.random();
+  }
+
+  render()
+  {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, half_cell, 0, two_PI);
+    ctx.closePath();
+    ctx.stroke();
   }
 }
 
@@ -64,11 +90,20 @@ function update_canv_size()
 function update()
 {
   nake.update();
+  if (!(
+    nake.x - half_cell > apple.x + half_cell ||
+    nake.x + half_cell < apple.x - half_cell ||
+    nake.y - half_cell > apple.y + half_cell ||
+    nake.y + half_cell < apple.y - half_cell
+  )) {
+    apple.respawn();
+  }
 }
 
 function render()
 {
   ctx.clearRect(0, 0, canv.width, canv.height);
+  apple.render();
   nake.render();
 }
 
@@ -112,5 +147,6 @@ window.addEventListener("keydown", (event) => {
 });
 
 const nake = new Nake();
+const apple = new Apple();
 
 window.requestAnimationFrame(main);
