@@ -299,6 +299,14 @@ imdb = "tt0469494"
 name = "There Will Be Blood"
 year = "2007"
 [[movies]]
+imdb = "tt0096256"
+name = "They Live"
+year = "1988"
+[[movies]]
+imdb = "tt1183732"
+name = "Tokyo Gore Police"
+year = "2008"
+[[movies]]
 imdb = "tt0100802"
 name = "Total Recall"
 year = "1990"
