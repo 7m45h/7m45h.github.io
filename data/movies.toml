@@ -15,6 +15,10 @@ imdb = "tt0106308"
 name = "Army of Darkness"
 year = "1992"
 [[movies]]
+imdb = "tt0783233"
+name = "Atonement"
+year = "2007"
+[[movies]]
 imdb = "tt0118655"
 name = "Austin Powers: International Man of Mystery"
 year = "1997"
@@ -30,6 +34,10 @@ year = "2022"
 imdb = "tt0088763"
 name = "Back to the Future"
 year = "1985"
+[[movies]]
+imdb = "tt0112442"
+name = "Bad Boys"
+year = "1995"
 [[movies]]
 imdb = "tt0103772"
 name = "Basic Instinct"
@@ -147,6 +155,10 @@ imdb = "tt0290673"
 name = "Irreversible"
 year = "2002"
 [[movies]]
+imdb = "tt1396484"
+name = "It"
+year = "2017"
+[[movies]]
 imdb = "tt0090018"
 name = "Lady of the Night"
 year = "1986"
@@ -254,6 +266,10 @@ year = "1975"
 imdb = "tt0050212"
 name = "The Bridge on the River Kwai"
 year = "1957"
+[[movies]]
+imdb = "tt0116075"
+name = "The Dentist"
+year = "1996"
 [[movies]]
 imdb = "tt0083907"
 name = "The Evil Dead"
