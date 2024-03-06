@@ -24,8 +24,8 @@ class Nake
 
   constructor()
   {
-    this.x = canv.width * 0.5;
-    this.y = canv.height * 0.5;
+    this.x    = canv.width * 0.5;
+    this.y    = canv.height * 0.5;
     this.tail = [];
   }
 
@@ -101,10 +101,10 @@ class Apple
 
 function update_canv_size()
 {
-  canv.width = div_main.clientWidth;
+  canv.width  = div_main.clientWidth;
   canv.height = div_main.clientHeight;
 
-  ctx.font = "20px monospace";
+  ctx.font      = "20px monospace";
   ctx.lineWidth = 2;
 }
 
@@ -124,7 +124,7 @@ function update()
 
 function render()
 {
-  ctx.fillStyle = color_fg   // color_* ? from theme_manager.js
+  ctx.fillStyle   = color_fg // color_* ? from theme_manager.js
   ctx.strokeStyle = color_fg // color_* ? from theme_manager.js
 
   ctx.clearRect(0, 0, canv.width, canv.height);
@@ -136,7 +136,7 @@ function render()
 function main(time)
 {
   time_delta = time - time_prev;
-  time_prev = time;
+  time_prev  = time;
 
   if (time_counter > fps) {
     update();
@@ -176,7 +176,7 @@ window.addEventListener("keydown", (event) => {
   }
 });
 
-const nake = new Nake();
+const nake  = new Nake();
 const apple = new Apple();
 
 window.requestAnimationFrame(main);
