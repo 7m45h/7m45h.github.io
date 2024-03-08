@@ -87,6 +87,10 @@ imdb = "tt1853728"
 name = "Django Unchained"
 year = "2012"
 [[movies]]
+imdb = "tt0080179"
+name = "Drunken Master"
+year = "1978"
+[[movies]]
 imdb = "tt1191111"
 name = "Enter the Void"
 year = "2009"
@@ -255,6 +259,10 @@ imdb = "tt0829482"
 name = "Superbad"
 year = "2007"
 [[movies]]
+imdb = "tt0101272"
+name = "The Addams Family"
+year = "1991"
+[[movies]]
 imdb = "tt1877830"
 name = "The Batman"
 year = "2022"
@@ -342,6 +350,10 @@ year = "1996"
 imdb = "tt2105044"
 name = "V/H/S"
 year = "2012"
+[[movies]]
+imdb = "tt2239822"
+name = "Valerian and the City of a Thousand Planets"
+year = "2017"
 [[movies]]
 imdb = "tt0090305"
 name = "Weird Science"
