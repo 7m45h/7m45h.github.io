@@ -4,6 +4,7 @@ description = "list of movies i enjoyed watching"
 tags = ["7m45h", "movies", "list"]
 date = 2024-02-11
 draft = false
+repo = "https://github.com/7m45h/7m45h.github.io/tree/master/content/blog/evil_list"
 [[powerdby]]
 name = "impawards"
 link = "http://www.impawards.com/"
