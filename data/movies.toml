@@ -43,6 +43,10 @@ imdb = "tt0103772"
 name = "Basic Instinct"
 year = "1992"
 [[movies]]
+imdb = "tt0060153"
+name = "Batman: The Movie"
+year = "1966"
+[[movies]]
 imdb = "tt1469304"
 name = "Baywatch"
 year = "2017"
@@ -86,6 +90,10 @@ year = "2009"
 imdb = "tt1853728"
 name = "Django Unchained"
 year = "2012"
+[[movies]]
+imdb = "tt1409124"
+name = "DownWard Spiral"
+year = "2008"
 [[movies]]
 imdb = "tt0080179"
 name = "Drunken Master"
@@ -139,6 +147,10 @@ imdb = "tt0241527"
 name = "Harry Potter and the Sorcerer's Stone"
 year = "2001"
 [[movies]]
+imdb = "tt0113277"
+name = "Heat"
+year = "1995"
+[[movies]]
 imdb = "tt0093177"
 name = "Hellraiser"
 year = "1987"
@@ -162,6 +174,10 @@ year = "2002"
 imdb = "tt1396484"
 name = "It"
 year = "2017"
+[[movies]]
+imdb = "tt10366206"
+name = "John Wick: Chapter 4"
+year = "2023"
 [[movies]]
 imdb = "tt0090018"
 name = "Lady of the Night"
@@ -201,6 +217,10 @@ year = "2001"
 [[movies]]
 imdb = "tt0485947"
 name = "Mr. Nobody"
+year = "2009"
+[[movies]]
+imdb = "tt1386671"
+name = "Nurses"
 year = "2009"
 [[movies]]
 imdb = "tt0477457"
@@ -255,9 +275,17 @@ imdb = "tt0245429"
 name = "Spirited Away"
 year = "2001"
 [[movies]]
+imdb = "tt0079945"
+name = "Star Trek: The Motion Picture"
+year = "1979"
+[[movies]]
 imdb = "tt0829482"
 name = "Superbad"
 year = "2007"
+[[movies]]
+imdb = "tt0111361"
+name = "Tammy and the T-Rex"
+year = "1994"
 [[movies]]
 imdb = "tt0101272"
 name = "The Addams Family"
