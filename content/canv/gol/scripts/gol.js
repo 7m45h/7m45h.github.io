@@ -20,6 +20,11 @@ let cn             = 0;
 
 let reset_button = false;
 
+const fps        = 1000 / 10;
+let delta_time   = 0;
+let prev_time    = 0;
+let time_counter = 0;
+
 function fit_canv()
 {
   canv.width  = div_main.clientWidth;
@@ -126,15 +131,28 @@ function handle_window_resize()
   generate_grid();
 }
 
-function main()
+function main(crnt_time)
 {
   if (reset_button)
   {
     generate_grid();
     reset_button = false;
   }
-  update_grid();
-  render();
+
+  delta_time = crnt_time - prev_time;
+  prev_time  = crnt_time;
+
+  if (time_counter > fps)
+  {
+    update_grid();
+    render();
+    time_counter = 0;
+  }
+  else
+  {
+    time_counter += delta_time;
+  }
+
   window.requestAnimationFrame(main);
 }
 
