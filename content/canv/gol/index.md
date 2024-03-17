@@ -4,7 +4,7 @@ description = "conways game of life"
 tags = ["john conway", "game of life", "html5", "canvas", "js"]
 date = 2024-03-15
 draft = false
-repo = "url"
+repo = "https://github.com/7m45h/7m45h.github.io/tree/master/content/canv/gol"
 +++
 
 The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.
