@@ -1,11 +1,16 @@
 {{ define "main" }}
-  <section>
-    {{ with .Site.GetPage "/canv" }}
-      {{ if $.InSection . }}
+  {{ with .Site.GetPage "/canv" }}
+    {{ if $.InSection . }}
+      <section id="canvas">
         <canvas></canvas>
-      {{ else }}
+      </section>
+      <section id="info">
         {{ $.Content }}
-      {{ end }}
+      </section>
+    {{ else }}
+      <section>
+        {{ $.Content }}
+      </section>
     {{ end }}
-  </section>
+  {{ end }}
 {{ end }}

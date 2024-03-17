@@ -7,4 +7,10 @@
   {{ range site.Sections }}
     <a href="{{ .RelPermalink }}" class="bar-item-item">{{ .Title }}</a>
   {{ end }}
+  {{ with .Site.GetPage "/canv" }}
+    {{ if and ( $.InSection . ) ( $.IsPage ) }}
+      <a href="#canvas" class="bar-item-item">canvas</a>
+      <a href="#info" class="bar-item-item">info</a>
+    {{ end }}
+  {{ end }}
 {{ end }}
