@@ -58,12 +58,12 @@ function update_grid()
   for (let r = 0; r < crnt_grid.length; r++)
   {
     row_prev = ((r - 1) + crnt_grid.length) % crnt_grid.length;
-    row_next = ((r + 1) + crnt_grid.length) % crnt_grid.length;
+    row_next = (r + 1) % crnt_grid.length;
     next_grid.push([]);
     for (let c = 0; c < crnt_grid[r].length; c++)
     {
       col_prev = ((c - 1) + crnt_grid[r].length) % crnt_grid[r].length;
-      col_next = ((c + 1) + crnt_grid[r].length) % crnt_grid[r].length;
+      col_next = (c + 1) % crnt_grid[r].length;
 
       neighbor_count = 0;
       neighbor_count += crnt_grid[row_prev][col_prev];
