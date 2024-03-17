@@ -1,5 +1,4 @@
 figure {
-  border: var(--border);
   padding: var(--fsize-norm);
 
   & img {
