@@ -12,7 +12,6 @@ titleCaseStyle = "none"
 
 [params]
 author = "tmash"
-repo = "https://github.com/7m45h/7m45h.github.io"
 
 [minify]
 minifyOutput = true

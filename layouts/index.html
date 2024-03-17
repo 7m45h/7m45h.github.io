@@ -1,4 +1,7 @@
 {{ define "main" }}
+  <section id="{{ .Title }}">
+    {{ .Content }}
+  </section>
   {{ range site.Sections }}
     <section id="{{ .Title }}">
       {{ partial "page_lister.html" . }}
