@@ -13,10 +13,10 @@ let grid_start_x = 0;
 let grid_start_y = 0;
 
 let neighbor_count = 0;
-let rp             = 0;
-let rn             = 0;
-let cp             = 0;
-let cn             = 0;
+let row_prev       = 0;
+let row_next       = 0;
+let col_prev       = 0;
+let col_next       = 0;
 
 let reset_button = false;
 
@@ -57,23 +57,23 @@ function update_grid()
 
   for (let r = 0; r < crnt_grid.length; r++)
   {
-    rp = ((r - 1) + crnt_grid.length) % crnt_grid.length;
-    rn = ((r + 1) + crnt_grid.length) % crnt_grid.length;
+    row_prev = ((r - 1) + crnt_grid.length) % crnt_grid.length;
+    row_next = ((r + 1) + crnt_grid.length) % crnt_grid.length;
     next_grid.push([]);
     for (let c = 0; c < crnt_grid[r].length; c++)
     {
-      cp = ((c - 1) + crnt_grid[r].length) % crnt_grid[r].length;
-      cn = ((c + 1) + crnt_grid[r].length) % crnt_grid[r].length;
+      col_prev = ((c - 1) + crnt_grid[r].length) % crnt_grid[r].length;
+      col_next = ((c + 1) + crnt_grid[r].length) % crnt_grid[r].length;
 
       neighbor_count = 0;
-      neighbor_count += crnt_grid[rp][cp];
-      neighbor_count += crnt_grid[rp][ c];
-      neighbor_count += crnt_grid[rp][cn];
-      neighbor_count += crnt_grid[ r][cp];
-      neighbor_count += crnt_grid[ r][cn];
-      neighbor_count += crnt_grid[rn][cp];
-      neighbor_count += crnt_grid[rn][ c];
-      neighbor_count += crnt_grid[rn][cn];
+      neighbor_count += crnt_grid[row_prev][col_prev];
+      neighbor_count += crnt_grid[row_prev][       c];
+      neighbor_count += crnt_grid[row_prev][col_next];
+      neighbor_count += crnt_grid[       r][col_prev];
+      neighbor_count += crnt_grid[       r][col_next];
+      neighbor_count += crnt_grid[row_next][col_prev];
+      neighbor_count += crnt_grid[row_next][       c];
+      neighbor_count += crnt_grid[row_next][col_next];
 
       if (crnt_grid[r][c])
       {

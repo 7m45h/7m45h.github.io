@@ -3,10 +3,12 @@ figure {
 
   & img {
     display: block;
+    object-fit: cover;
     margin: 0px auto;
     border: var(--border);
     border-radius: var(--fsize-norm);
     height: 50dvh;
+    max-width: 100%;
   }
 
   & figcaption {
