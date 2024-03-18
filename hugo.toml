@@ -5,6 +5,7 @@ cleanDestinationDir = true
 disableKinds = ["rss", "taxonomy", "term"]
 enableGitInfo = true
 enableRobotsTXT = true
+capitalizeListTitles = false
 pluralizeListTitles = false
 timeout = "60"
 timeZone = "UTC"
