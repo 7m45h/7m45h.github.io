@@ -9,7 +9,7 @@ capitalizeListTitles = false
 pluralizeListTitles = false
 timeout = "60"
 timeZone = "UTC"
-titleCaseStyle = "none"
+titleCaseStyle = nan
 
 [params]
 author = "tmash"
