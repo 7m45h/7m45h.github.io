@@ -8,7 +8,7 @@ body {
   width: 100dvw;
   height: 100dvh;
   background: var(--color-bg);
-  font-family: monospace;
+  font-family: "Fira Mono", monospace;
   font-size: var(--fsize-norm);
   font-weight: bold;
   color: var(--color-fg);

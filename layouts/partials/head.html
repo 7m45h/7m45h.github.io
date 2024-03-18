@@ -15,6 +15,7 @@
   <link rel="icon" type="image/png" href="{{ .RelPermalink }}" media="(prefers-color-scheme: dark)">
   <link rel="icon" type="image/png" href="{{ .RelPermalink }}" media="(prefers-color-scheme: no-preference)">
 {{ end}}
+<link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
 {{ with resources.Match "css/*.css" | resources.Concat "css/main.css" | resources.Minify }}
   <link rel="stylesheet" type="text/css" href="{{ .RelPermalink }}">
 {{ end }}
