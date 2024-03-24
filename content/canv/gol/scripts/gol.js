@@ -2,13 +2,13 @@ const div_main = document.querySelector("main");
 const canv     = document.querySelector("canvas");
 const ctx      = canv.getContext("2d");
 
-const cell_size     = 10;
-const cell_gap      = 4;
-const cell_gap_half = cell_gap * 0.5
-const cell_area     = cell_size + cell_gap;
+let cell_size       = 10;
+let cell_gap        = 4;
+let cell_gap_half   = cell_gap * 0.5
+let cell_area       = cell_size + cell_gap;
 
-let next_grid    = [];
-let crnt_grid    = [];
+let next_grid    = null;
+let crnt_grid    = null;
 let grid_start_x = 0;
 let grid_start_y = 0;
 
@@ -19,6 +19,7 @@ let col_prev       = 0;
 let col_next       = 0;
 
 let reset_button = false;
+let change_cell_size = null;
 
 const fps        = 1000 / 10;
 let delta_time   = 0;
@@ -33,33 +34,36 @@ function fit_canv()
 
 function generate_grid()
 {
+  cell_gap      = cell_size < 4 ? (cell_size == 1 ? cell_gap = 0 : 1) : 4;
+  cell_gap_half = cell_gap > 0 ? cell_gap * 0.5 : 0;
+  cell_area     = cell_size + cell_gap;
+
   let row_count = Math.floor(canv.height / cell_area);
   let col_count = Math.floor(canv.width / cell_area);
 
   grid_start_x = (canv.width % cell_area) * 0.5 + cell_gap_half;
   grid_start_y = (canv.height % cell_area) * 0.5 + cell_gap_half;
 
-  crnt_grid = [];
+  crnt_grid = new Array(row_count);
+  next_grid = new Array(row_count);
 
   for (let r = 0; r < row_count; r++)
   {
-    crnt_grid.push([]);
+    crnt_grid[r] = new Array(col_count);
+    next_grid[r] = new Array(col_count);
     for (let c = 0; c < col_count; c++)
     {
-      crnt_grid[r].push(Math.round(Math.random()));
+      crnt_grid[r][c] = Math.round(Math.random());
     }
   }
 }
 
 function update_grid()
 {
-  next_grid = [];
-
   for (let r = 0; r < crnt_grid.length; r++)
   {
     row_prev = ((r - 1) + crnt_grid.length) % crnt_grid.length;
     row_next = (r + 1) % crnt_grid.length;
-    next_grid.push([]);
     for (let c = 0; c < crnt_grid[r].length; c++)
     {
       col_prev = ((c - 1) + crnt_grid[r].length) % crnt_grid[r].length;
@@ -79,28 +83,34 @@ function update_grid()
       {
         if (neighbor_count == 2 || neighbor_count == 3)
         {
-          next_grid[r].push(1);
+          next_grid[r][c] = 1;
         }
         else
         {
-          next_grid[r].push(0);
+          next_grid[r][c] = 0;
         }
       }
       else
       {
         if (neighbor_count == 3)
         {
-          next_grid[r].push(1);
+          next_grid[r][c] = 1;
         }
         else
         {
-          next_grid[r].push(0);
+          next_grid[r][c] = 0;
         }
       }
     }
   }
 
-  crnt_grid = next_grid;
+  for (let r = 0; r < next_grid.length; r++)
+  {
+    for (let c = 0; c < next_grid[r].length; c++)
+    {
+      crnt_grid[r][c] = next_grid[r][c];
+    }
+  }
 }
 
 function render_grid()
@@ -139,6 +149,20 @@ function main(crnt_time)
     reset_button = false;
   }
 
+  switch (change_cell_size)
+  {
+    case "up":
+      cell_size++;
+      change_cell_size = null;
+      generate_grid();
+      break;
+    case "down":
+      cell_size > 1 ? cell_size-- : cell_size = 1;
+      change_cell_size = null;
+      generate_grid();
+      break;
+  }
+
   delta_time = crnt_time - prev_time;
   prev_time  = crnt_time;
 
@@ -161,7 +185,20 @@ function init()
   fit_canv();
   generate_grid();
   window.addEventListener("resize", handle_window_resize);
-  window.addEventListener("keydown", (event) => { reset_button = event.key == "r"; });
+  window.addEventListener("keydown", (event) => {
+    switch (event.key)
+    {
+      case 'r':
+        reset_button = true;
+        break;
+      case "ArrowUp":
+        change_cell_size = "up";
+        break;
+      case "ArrowDown":
+        change_cell_size = "down";
+        break;
+    }
+  });
   window.requestAnimationFrame(main);
 }
 
