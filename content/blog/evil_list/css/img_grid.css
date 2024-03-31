@@ -2,20 +2,18 @@
   margin: var(--fsize-head-a);
 
   & > img {
-    transition-property: transform, filter;
+    transition-property: transform;
     transition-duration: 500ms;
     border: var(--border);
     object-fit: cover;
     width: 240px;
     height: 360px;
     transform: scaleX(-1);
-    filter: grayscale(1);
   }
 
   &:hover {
     & img {
       transform: scaleX(1);
-      filter: grayscale(0);
     }
   }
 }

@@ -52,8 +52,6 @@ function update_clock()
 function render_clock()
 {
   ctx.clearRect(0, 0, canv.width, canv.height);
-  ctx.fillStyle   = color_fg;
-  ctx.strokeStyle = color_fg;
   for (let r = 0; r < clock_col_bit_count; r++)
   {
     for (let c = 0; c < clock_row_bit_count; c++)

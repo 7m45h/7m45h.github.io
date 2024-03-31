@@ -115,8 +115,6 @@ function update_grid()
 
 function render_grid()
 {
-  ctx.fillStyle = color_fg;
-
   for (let r = 0; r < crnt_grid.length; r++)
   {
     for (let c = 0; c < crnt_grid[r].length; c++)

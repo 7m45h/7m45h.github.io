@@ -124,9 +124,6 @@ function update()
 
 function render()
 {
-  ctx.fillStyle   = color_fg // color_* ? from theme_manager.js
-  ctx.strokeStyle = color_fg // color_* ? from theme_manager.js
-
   ctx.clearRect(0, 0, canv.width, canv.height);
   apple.render();
   nake.render();
