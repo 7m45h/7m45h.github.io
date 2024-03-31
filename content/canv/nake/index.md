@@ -19,5 +19,7 @@ The simplicity and low technical requirements of snake games have resulted in hu
 - down arrow key: moves the nake down
 - left arrow key: moves the nake left
 - right arrow key: moves the nake right
+- +: increase nake speed
+- -: decrease nake speed
 
 the nake would not colide with anything yet. just eats the apple and grows. :D

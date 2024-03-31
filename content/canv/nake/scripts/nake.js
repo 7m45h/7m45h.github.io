@@ -5,8 +5,9 @@ const ctx      = canv.getContext("2d");
 const cell_size = 16;
 const half_cell = cell_size * 0.5;
 const two_PI    = Math.PI * 2;
-const fps       = 1000 / 24;
 
+let fps          = 24
+let fpm          = 1000 / fps;
 let time_prev    = 0;
 let time_delta   = 0;
 let time_counter = 0;
@@ -104,7 +105,7 @@ function update_canv_size()
   canv.width  = div_main.clientWidth;
   canv.height = div_main.clientHeight;
 
-  ctx.font      = "20px monospace";
+  ctx.font      = "bold 20px monospace";
   ctx.lineWidth = 2;
 }
 
@@ -127,7 +128,8 @@ function render()
   ctx.clearRect(0, 0, canv.width, canv.height);
   apple.render();
   nake.render();
-  ctx.fillText(`score: ${nake.tail.length}`, canv.width - 150, canv.height - 30);
+  ctx.fillText(`fps:   ${fps.toString().padStart(2, '0')}`, canv.width - 150, canv.height - 60);
+  ctx.fillText(`score: ${nake.tail.length.toString().padStart(2, '0')}`, canv.width - 150, canv.height - 30);
 }
 
 function main(time)
@@ -135,7 +137,7 @@ function main(time)
   time_delta = time - time_prev;
   time_prev  = time;
 
-  if (time_counter > fps) {
+  if (time_counter > fpm) {
     update();
     render();
     time_counter = 0;
@@ -169,6 +171,16 @@ window.addEventListener("keydown", (event) => {
 
     case "ArrowDown":
     if (crnt_key != "ArrowUp") crnt_key = "ArrowDown";
+    break;
+
+    case '+':
+    fps++;
+    fpm = 1000 / fps;
+    break;
+
+    case '-':
+    if (fps > 1) fps--;
+    fpm = 1000 / fps;
     break;
   }
 });
