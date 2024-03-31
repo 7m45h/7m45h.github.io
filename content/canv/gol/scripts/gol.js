@@ -189,10 +189,10 @@ function init()
       case 'r':
         reset_button = true;
         break;
-      case "ArrowUp":
+      case '+':
         change_cell_size = "up";
         break;
-      case "ArrowDown":
+      case '-':
         change_cell_size = "down";
         break;
     }

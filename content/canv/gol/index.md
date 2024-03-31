@@ -15,5 +15,5 @@ It is Turing complete and can simulate a universal constructor or any other Turi
 
 ### key map
 - r: reset grid
-- up arrow key: cell size++
-- down arrow key: cell size--
+- +: cell size++
+- -: cell size--
