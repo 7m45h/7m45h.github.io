@@ -7,4 +7,9 @@
       {{ partial "page_lister.html" . }}
     </section>
   {{ end }}
+  <section id="etc">
+    {{ range .Site.Data.etc_pages.pages }}
+      {{ partial "anchor_card.html" (dict "url" .url "name" .name "ext" true) }}
+    {{ end }}
+  </section>
 {{ end }}

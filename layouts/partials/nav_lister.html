@@ -3,6 +3,7 @@
   {{ range site.Sections }}
     <a href="#{{ .Title }}" class="bar-item-item">{{ .Title }}</a>
   {{ end }}
+  <a href="#etc" class="bar-item-item">etc</a>
 {{ else }}
   {{ range site.Sections }}
     <a href="{{ .RelPermalink }}" class="bar-item-item">{{ .Title }}</a>
