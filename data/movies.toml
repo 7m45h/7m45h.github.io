@@ -11,6 +11,10 @@ imdb = "tt0144084"
 name = "American Psycho"
 year = "2000"
 [[movies]]
+imdb = "tt0078788"
+name = "Apocalypse Now"
+year = "1979"
+[[movies]]
 imdb = "tt0106308"
 name = "Army of Darkness"
 year = "1992"
@@ -50,6 +54,10 @@ year = "1966"
 imdb = "tt1469304"
 name = "Baywatch"
 year = "2017"
+[[movies]]
+imdb = "tt0074285"
+name = "Carrie"
+year = "1976"
 [[movies]]
 imdb = "tt0460740"
 name = "Cashback"
@@ -182,6 +190,10 @@ year = "2017"
 imdb = "tt10366206"
 name = "John Wick: Chapter 4"
 year = "2023"
+[[movies]]
+imdb = "tt3605418"
+name = "Knock Knock"
+year = "2015"
 [[movies]]
 imdb = "tt0090018"
 name = "Lady of the Night"
@@ -394,6 +406,10 @@ year = "1985"
 imdb = "tt0120890"
 name = "Wild Things"
 year = "1998"
+[[movies]]
+imdb = "tt0067992"
+name = "Willy Wonka & the Chocolate Factory"
+year = "1971"
 [[movies]]
 imdb = "tt0120903"
 name = "X-Men"
