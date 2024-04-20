@@ -19,9 +19,9 @@ link = "https://github.com/7m45h/evil_manager"
 {{< evillister.inline >}}
   {{ range .Site.Data.movies.movies }}
     {{ $title := printf "%s %s" .name .year }}
-    {{ $poster := printf "images/%s.*" .imdb }}
+    {{ $poster := printf "images/evil_list/%s.*" .imdb }}
     <a class="m-poster" href="https://www.imdb.com/title/{{ .imdb }}/" title="{{ $title }}" target="_blank">
-      {{ with page.Resources.GetMatch $poster }}
+      {{ with resources.GetMatch $poster }}
         {{ with .Fit "240x360 webp photo q100" }}
           <img src="{{ .RelPermalink }}" alt="{{ $title }}" loading="lazy">
         {{ end }}
