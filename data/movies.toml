@@ -43,6 +43,10 @@ imdb = "tt0112442"
 name = "Bad Boys"
 year = "1995"
 [[movies]]
+imdb = "tt0092610"
+name = "Bad Taste"
+year = "1987"
+[[movies]]
 imdb = "tt0103772"
 name = "Basic Instinct"
 year = "1992"
@@ -239,6 +243,10 @@ imdb = "tt1386671"
 name = "Nurses"
 year = "2009"
 [[movies]]
+imdb = "tt0364569"
+name = "Oldboy"
+year = "2003"
+[[movies]]
 imdb = "tt0477457"
 name = "Pirates"
 year = "2005"
@@ -291,6 +299,10 @@ imdb = "tt0245429"
 name = "Spirited Away"
 year = "2001"
 [[movies]]
+imdb = "tt1017460"
+name = "Splice"
+year = "2009"
+[[movies]]
 imdb = "tt0079945"
 name = "Star Trek: The Motion Picture"
 year = "1979"
@@ -334,6 +346,10 @@ year = "1967"
 imdb = "tt0120737"
 name = "The Lord of the Rings: The Fellowship of the Ring"
 year = "2001"
+[[movies]]
+imdb = "tt0884328"
+name = "The Mist"
+year = "2007"
 [[movies]]
 imdb = "tt0230600"
 name = "The Others"
