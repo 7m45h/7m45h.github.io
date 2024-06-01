@@ -4,9 +4,9 @@ const crnt_colors = { "fb": "#000000", "bg": "#000000" };
 
 function set_random_bg_color()
 {
-  let rand_h =  Math.round(Math.random() * 360);
-  let rand_s = (Math.round(Math.random() * 40) + 60); // 70%
-  let rand_l = (Math.round(Math.random() * 50) + 50); // 60%
+  let rand_h = Math.round(Math.random() * 360);
+  let rand_s = 70;
+  let rand_l = 60;
   crnt_colors.bg = `hsl(${rand_h}deg, ${rand_s}%, ${rand_l}%)`;
 }
 

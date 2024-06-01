@@ -7,7 +7,7 @@
   {{ $keywords := collections.Delimit . ", " }}
   <meta name="keywords" content="{{ $keywords }}">
 {{ end }}
-<meta name="color-scheme" content="dark">
+<meta name="color-scheme" content="light">
 {{ with resources.Get "images/favicon_light.png" }}
   <link rel="icon" type="image/png" href="{{ .RelPermalink }}" media="(prefers-color-scheme: light)">
 {{ end}}
