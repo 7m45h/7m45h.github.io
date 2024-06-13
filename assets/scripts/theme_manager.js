@@ -1,6 +1,6 @@
 const theme_switch_btn = document.getElementById("theme-switch-btn");
 
-const crnt_colors = { "fb": "#000000", "bg": "#000000" };
+const crnt_colors = { "fg": "#000000", "bg": "#000000" };
 
 function set_random_bg_color()
 {
@@ -12,7 +12,7 @@ function set_random_bg_color()
 
 function update_document_colors()
 {
-  document.documentElement.style.setProperty("--color-fb", crnt_colors.fb);
+  document.documentElement.style.setProperty("--color-fg", crnt_colors.fg);
   document.documentElement.style.setProperty("--color-bg", crnt_colors.bg);
 }
 
