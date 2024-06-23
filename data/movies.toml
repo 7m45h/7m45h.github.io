@@ -215,6 +215,10 @@ imdb = "tt3605418"
 name = "Knock Knock"
 year = "2015"
 [[movies]]
+imdb = "tt0373074"
+name = "Kung Fu Hustle"
+year = "2004"
+[[movies]]
 imdb = "tt0090018"
 name = "Lady of the Night"
 year = "1986"
@@ -271,6 +275,10 @@ imdb = "tt1266097"
 name = "Pirates II: Stagnetti's Revenge"
 year = "2008"
 [[movies]]
+imdb = "tt0091763"
+name = "Platoon"
+year = "1986"
+[[movies]]
 imdb = "tt3915174"
 name = "Puss in Boots: The Last Wish"
 year = "2022"
@@ -310,6 +318,10 @@ year = "2002"
 imdb = "tt0316654"
 name = "Spider-Man 2"
 year = "2004"
+[[movies]]
+imdb = "tt9362722"
+name = "Spider-Man: Across the Spider-Verse"
+year = "2023"
 [[movies]]
 imdb = "tt0245429"
 name = "Spirited Away"
