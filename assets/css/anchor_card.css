@@ -14,7 +14,7 @@
   }
 
   & span {
-    color: var(--color-bg);
+    color: light-dark(var(--color-bg), var(--color-fg));
     font-size: var(--fsize-head-b);
     mix-blend-mode: difference;
 

@@ -125,6 +125,8 @@ function update()
 
 function render()
 {
+  ctx.fillStyle   = crnt_colors.fg;
+  ctx.strokeStyle = crnt_colors.fg;
   ctx.clearRect(0, 0, canv.width, canv.height);
   apple.render();
   nake.render();

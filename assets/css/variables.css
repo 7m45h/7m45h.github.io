@@ -17,8 +17,11 @@
 }
 
 :root {
-  --color-fg: #000000;
-  --color-bg: #000000;
+  --color-dark:  #000000;
+  --color-light: #ffffff;
+
+  --color-fg:light-dark(var(--color-dark), var(--color-light));
+  --color-bg:light-dark(var(--color-light), var(--color-dark));
 
   --fsize-norm: 14px;
   --fsize-head-a: calc(var(--fsize-norm) * 2);

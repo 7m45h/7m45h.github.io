@@ -129,6 +129,7 @@ function render_grid()
 
 function render()
 {
+  ctx.fillStyle = crnt_colors.fg;
   ctx.clearRect(0, 0, canv.width, canv.height);
   render_grid();
 }

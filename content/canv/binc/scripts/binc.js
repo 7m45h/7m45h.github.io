@@ -51,6 +51,8 @@ function update_clock()
 
 function render_clock()
 {
+  ctx.fillStyle   = crnt_colors.fg;
+  ctx.strokeStyle = crnt_colors.fg;
   ctx.clearRect(0, 0, canv.width, canv.height);
   for (let r = 0; r < clock_col_bit_count; r++)
   {
