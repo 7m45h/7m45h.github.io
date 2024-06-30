@@ -17,8 +17,9 @@
 }
 
 :root {
-  --color-dark:  #000000;
-  --color-light: #ffffff;
+  --color-dark:   #000000;
+  --color-light:  #ffffff;
+  --color-accent: #00ff00;
 
   --color-fg:light-dark(var(--color-dark), var(--color-light));
   --color-bg:light-dark(var(--color-light), var(--color-dark));

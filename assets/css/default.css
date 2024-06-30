@@ -34,9 +34,14 @@ a {
       content: ' ↗  ';
     }
 
-    &:hover::after {
-      content: '    ';
-      animation: dial 1s infinite;
+    &:hover {
+      color: light-dark(var(--color-fg), var(--color-bg));
+      background: var(--color-accent);
+
+      &::after {
+        content: '    ';
+        animation: dial 1s infinite;
+      }
     }
   }
 }
