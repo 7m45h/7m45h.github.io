@@ -1,3 +1,5 @@
+import { crnt_colors } from "assets/scripts/theme_manager";
+
 const div_main = document.querySelector("main");
 const canv     = document.querySelector("canvas");
 const ctx      = canv.getContext("2d");
@@ -190,4 +192,9 @@ window.addEventListener("keydown", (event) => {
 const nake  = new Nake();
 const apple = new Apple();
 
-window.requestAnimationFrame(main);
+function init()
+{
+  window.requestAnimationFrame(main);
+}
+
+export { init }

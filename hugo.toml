@@ -16,7 +16,7 @@ title = "7m45h"
 titleCaseStyle = nan
 
 [build]
-noJSConfigInAssets = false
+noJSConfigInAssets = true
 useResourceCacheWhen = "always"
 [build.buildStats]
 enable = true

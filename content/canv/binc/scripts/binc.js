@@ -1,3 +1,5 @@
+import { crnt_colors } from "assets/scripts/theme_manager";
+
 const div_main = document.querySelector("main");
 const canv     = document.querySelector("canvas");
 const ctx      = canv.getContext("2d");
@@ -84,4 +86,4 @@ function init()
   window.requestAnimationFrame(main);
 }
 
-init();
+export { init }

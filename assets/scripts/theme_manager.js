@@ -41,4 +41,4 @@ function init()
   prefer_dark_theme.addEventListener("change", toggle_theme_auto);
 }
 
-init();
+export { crnt_colors, init }
