@@ -2,7 +2,7 @@
   margin: var(--fsize-head-a);
 
   & > img {
-    transition-property: transform filter;
+    transition-property: transform, filter;
     transition-duration: 500ms;
     border: var(--border);
     object-fit: cover;
