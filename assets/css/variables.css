@@ -24,7 +24,7 @@
   --color-fg:light-dark(var(--color-dark), var(--color-light));
   --color-bg:light-dark(var(--color-light), var(--color-dark));
 
-  --fsize-norm: 14px;
+  --fsize-norm: 1vw;
   --fsize-head-a: calc(var(--fsize-norm) * 2);
   --fsize-head-b: calc(var(--fsize-norm) * 4);
 
