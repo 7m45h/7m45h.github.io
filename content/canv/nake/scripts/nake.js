@@ -1,4 +1,4 @@
-import { crnt_colors } from "assets/scripts/theme_manager";
+import * as theme_manager from "assets/scripts/theme_manager";
 
 const div_main = document.querySelector("main");
 const canv     = document.querySelector("canvas");
@@ -127,8 +127,8 @@ function update()
 
 function render()
 {
-  ctx.fillStyle   = crnt_colors.fg;
-  ctx.strokeStyle = crnt_colors.fg;
+  ctx.fillStyle   = theme_manager.crnt_colors.fg;
+  ctx.strokeStyle = theme_manager.crnt_colors.fg;
   ctx.clearRect(0, 0, canv.width, canv.height);
   apple.render();
   nake.render();
@@ -192,9 +192,5 @@ window.addEventListener("keydown", (event) => {
 const nake  = new Nake();
 const apple = new Apple();
 
-function init()
-{
-  window.requestAnimationFrame(main);
-}
-
-export { init }
+theme_manager.init();
+window.requestAnimationFrame(main);

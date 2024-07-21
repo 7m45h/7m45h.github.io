@@ -23,28 +23,12 @@
   {{ $mincss := resources.Concat $mincsspath . | resources.Minify }}
   <link rel="stylesheet" type="text/css" href="{{ $mincss.RelPermalink }}">
 {{ end }}
-{{ with .Resources.Get "scripts/main.js" }}
-  {{ if hugo.IsDevelopment }}
-    {{ with . | js.Build }}
-      <script src="{{ .RelPermalink }}" defer></script>
-    {{ end }}
-  {{ else }}
-    {{ $opts := dict "minify" true }}
-    {{ with . | js.Build $opts | fingerprint }}
-      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" defer></script>
-    {{ end }}
+{{ with .Resources.Match "scripts/*.js" }}
+  {{ range . }}
+    {{ partial "link_script.html" . }}
   {{ end }}
 {{ else }}
   {{ with resources.Get "scripts/main.js" }}
-    {{ if hugo.IsDevelopment }}
-      {{ with . | js.Build }}
-        <script src="{{ .RelPermalink }}" defer></script>
-      {{ end }}
-    {{ else }}
-      {{ $opts := dict "minify" true }}
-      {{ with . | js.Build $opts | fingerprint }}
-        <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" defer></script>
-      {{ end }}
-    {{ end }}
+    {{ partial "link_script.html" . }}
   {{ end }}
 {{ end }}

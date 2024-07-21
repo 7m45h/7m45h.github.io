@@ -1,4 +1,4 @@
-import { crnt_colors } from "assets/scripts/theme_manager";
+import * as theme_manager from "assets/scripts/theme_manager";
 
 const div_main = document.querySelector("main");
 const canv     = document.querySelector("canvas");
@@ -131,7 +131,7 @@ function render_grid()
 
 function render()
 {
-  ctx.fillStyle = crnt_colors.fg;
+  ctx.fillStyle = theme_manager.crnt_colors.fg;
   ctx.clearRect(0, 0, canv.width, canv.height);
   render_grid();
 }
@@ -203,4 +203,5 @@ function init()
   window.requestAnimationFrame(main);
 }
 
-export { init }
+theme_manager.init();
+init();
