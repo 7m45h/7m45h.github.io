@@ -1,0 +1,43 @@
+baseURL                = "https://7m45h.github.io/"
+capitalizeListTitles   = false
+cleanDestinationDir    = true
+defaultContentLanguage = "en-us"
+copyright              = "GPL-3.0 license"
+disableKinds           = [ "rss", "taxonomy", "term" ]
+enableGitInfo          = true
+enableRobotsTXT        = true
+languageCode           = "en-us"
+noChmod                = true
+noTimes                = true
+pluralizeListTitles    = false
+removePathAccents      = true
+timeout                = "1m"
+timeZone               = "UTC"
+title                  = "7m45h"
+titleCaseStyle         = nan
+
+[build]
+noJSConfigInAssets   = true
+useResourceCacheWhen = "always"
+[build.buildStats]
+enable = true
+
+[minify]
+minifyOutput = true
+[minify.tdewolff.css]
+keepCSS2 = false
+[minify.tdewolff.html]
+keepQuotes          = true
+[minify.tdewolff.js]
+version = 0
+[minify.tdewolff.json]
+keepNumbers = true
+
+[security]
+enableInlineShortcodes = true
+
+[sitemap]
+changeFreq = "weekly"
+
+[params]
+author = "tmash"
