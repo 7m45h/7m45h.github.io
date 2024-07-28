@@ -1,0 +1,14 @@
+{{ if hugo.IsDevelopment }}
+  {{ range . }}
+    {{ with . | js.Build }}
+      <script defer src="{{ .RelPermalink }}"></script>
+    {{ end }}
+  {{ end }}
+{{ else }}
+  {{ $build_conf := dict "minify" true }}
+  {{ range . }}
+    {{ with . | js.Build $build_conf | resources.Fingerprint }}
+      <script defer integrity="{{ .Data.Integrity }}" src="{{ .RelPermalink }}"></script>
+    {{ end }}
+  {{ end }}
+{{ end }}

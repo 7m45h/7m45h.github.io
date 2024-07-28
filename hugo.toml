@@ -27,7 +27,7 @@ minifyOutput = true
 [minify.tdewolff.css]
 keepCSS2 = false
 [minify.tdewolff.html]
-keepQuotes          = true
+keepQuotes = true
 [minify.tdewolff.js]
 version = 0
 [minify.tdewolff.json]

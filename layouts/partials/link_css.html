@@ -1,0 +1,11 @@
+{{ if hugo.IsDevelopment }}
+  {{ range . }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+  {{ end }}
+{{ else }}
+  {{ range . }}
+    {{ with . | resources.Minify | resources.Fingerprint }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
+    {{ end }}
+  {{ end }}
+{{ end }}

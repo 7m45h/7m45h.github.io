@@ -1,0 +1,20 @@
+{{ define "main" }}
+  {{ partial "bg_canvas.html" . }}
+  <main>
+    <section id="{{ .Title }}">
+      {{ .Content }}
+    </section>
+    {{ range .Site.Sections }}
+      <section id="{{ .Title }}">
+        {{ partial "page_lister.html" . }}
+      </section>
+    {{ end }}
+    {{ with .Site.Data.etc_pages.pages }}
+      <section id="etc">
+        {{ range . }}
+          {{ partial "anchor_card.html" (dict "url" .url "name" .name "ext" true) }}
+        {{ end }}
+      </section>
+    {{ end }}
+  </main>
+{{ end }}
