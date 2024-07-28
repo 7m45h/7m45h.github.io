@@ -1,5 +1,0 @@
-{{ $randID := time.Now.Unix }}
-{{ $URL := printf "https://picsum.photos/seed/%d/info" $randID }}
-{{ with resources.GetRemote $URL | transform.Unmarshal }}
-  {{ partial "img.html" (dict "src" .download_url "alt" "random image from awsome api picsum.photos" "name" .author "link" .url) }}
-{{ end }}
