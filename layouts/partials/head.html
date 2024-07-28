@@ -18,18 +18,18 @@
   <title>{{ .Site.Title }}: {{ .Title }}</title>
   {{ with resources.GetMatch "images/favicon_black.*" }}
     {{ with .Resize "32x" }}
-      {{ partial "link_icon.html" . }}
+      {{ partial "link_icon.html" (collections.Dictionary "image" . "color" "light") }}
     {{ end }}
     {{ with .Resize "16x" }}
-      {{ partial "link_icon.html" . }}
+      {{ partial "link_icon.html" (collections.Dictionary "image" . "color" "light") }}
     {{ end }}
   {{ end }}
   {{ with resources.GetMatch "images/favicon_white.*" }}
     {{ with .Resize "32x" }}
-      {{ partial "link_icon.html" . }}
+      {{ partial "link_icon.html" (collections.Dictionary "image" . "color" "dark") }}
     {{ end }}
     {{ with .Resize "16x" }}
-      {{ partial "link_icon.html" . }}
+      {{ partial "link_icon.html" (collections.Dictionary "image" . "color" "dark") }}
     {{ end }}
   {{ end }}
   <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">

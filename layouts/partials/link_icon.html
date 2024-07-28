@@ -1,2 +1,1 @@
-<link rel="icon" type="{{ .MediaType.Type }}" sizes="{{ .Width }}x{{ .Height }}" href="{{ .RelPermalink }}" media="(prefers-color-scheme: dark)">
-<link rel="icon" type="{{ .MediaType.Type }}" sizes="{{ .Width }}x{{ .Height }}" href="{{ .RelPermalink }}" media="(prefers-color-scheme: light)">
+<link rel="icon" type="{{ .image.MediaType.Type }}" sizes="{{ .image.Width }}x{{ .image.Height }}" href="{{ .image.RelPermalink }}" media="(prefers-color-scheme: {{ .color }})">
